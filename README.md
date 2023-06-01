@@ -1,5 +1,8 @@
 # obsidian_0
-Knowledge vault, created to work with the Obsidian program.
 
-## Links
+## What is this?
+
+- The first knowledge vault
+- created to work with the Obsidian program
+- Has automated syncing for both desktops and mobile
 

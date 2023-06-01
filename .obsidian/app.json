@@ -1,4 +1,9 @@
 {
   "vimMode": true,
-  "livePreview": false
+  "livePreview": false,
+  "spellcheckLanguages": [
+    "en-CA"
+  ],
+  "showLineNumber": true,
+  "showFrontmatter": true
 }
