@@ -9,5 +9,5 @@ Storage and communication protocol used in server storage solutions. A good comp
 # Table of Contents
 
 - Chapter 6
- - [6.16]()
+ - [6.16](chapter_6/6.16_connections)
  - [6.17]()
