@@ -4,27 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3b88f54ea17969ab",
+        "id": "9b39b611411d8786",
         "type": "tabs",
         "children": [
           {
-            "id": "16a2f01d539d3dbb",
+            "id": "c36e3b6f72e3b3b9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "5c281e74330e650a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -147,7 +138,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c281e74330e650a",
+  "active": "c36e3b6f72e3b3b9",
   "lastOpenFiles": [
     "README.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
