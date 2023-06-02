@@ -11,11 +11,28 @@
             "id": "fc90d653f3fb4365",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "communications/spl5/Abstract.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "cba04838c9498f3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "communications/spl5/6.16 Connections.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "communications/spl5/6.16 Connections.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "communications/spl5/6.16 Connections.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +126,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "communications/spl5/6.16 Connections.md"
+          }
         }
       }
     ],
@@ -123,10 +144,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d66f2893a5d5cfc0",
+  "active": "cba04838c9498f3c",
   "lastOpenFiles": [
-    "README.md",
     "communications/spl5/Abstract.md",
+    "communications/spl5/6.16 Connections.md",
+    "README.md",
     "communications/spl5",
     "communications",
     "LICENSE"
