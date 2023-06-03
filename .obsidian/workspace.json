@@ -11,10 +11,30 @@
             "id": "c36e3b6f72e3b3b9",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "7c7f39a17e6849e4",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/ch06_03_if_let.md",
-                "mode": "preview",
+                "file": "programming/rust/ch10_01_visibility.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "f83912816433a31e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/ch10_00_modules.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -26,6 +46,18 @@
               "type": "markdown",
               "state": {
                 "file": "programming/rust/rust_string.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9aaf144183cceabe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_abstract.md.md",
                 "mode": "source",
                 "source": true
               }
@@ -63,8 +95,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +161,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_string.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +177,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_string.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +198,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "programming/rust/rust_string.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -191,14 +218,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb22cd5a3ac75e1a",
+  "active": "c36e3b6f72e3b3b9",
   "lastOpenFiles": [
-    "programming/rust/rust_abstract.md.md",
-    "README.md",
-    "programming/rust/rust_string.md",
-    "programming/rust/ch06_03_if_let.md",
-    "Untitled",
+    "programming/rust/ch10_02_struct_visibility.md",
+    "programming/rust/ch10_01_visibility.md",
+    "programming/rust/ch10_00_modules.md",
     "programming/rust/ch06_00_enums.md",
+    "programming/rust/Untitled 1.md",
+    "programming/rust/ch06_03_if_let.md",
+    "programming/rust/rust_abstract.md.md",
+    "programming/rust/rust_string.md",
+    "README.md",
+    "Untitled",
     "programming/java/java_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "programming/java",
