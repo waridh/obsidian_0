@@ -11,6 +11,21 @@ let string = "Hello,    ";
 let trim = s.trim();
 ```
 
+### `::replace()`
+
+This method allows us to replace a substring with a different string. This actually works with the string literal, and not the `String` class. Here is the syntax for it.
+
+```rust
+string.replace(match, substring);
+```
+
+Now for an example
+
+```rust
+let string = "Rust is boring";
+string.replace("boring", "interesting");
+```
+
 ## Character format
 
 Because Rust Strings are by default, UTF-8, there are some things you need to know. A character in a string that is ASCII will only take up a byte, but that same character as a `char` type would take up 4 bytes. Some non-ASCII characters in a string will also take up more than a byte. Because of the way that Rust indexing works, to get constant time indexing, it has to index by byte, and not by char. To attain char indexing, you would need to use a `char` array. Finally, because we are using byte indexing, when you index through a string, you will get a &u8. Here are some examples of the return of a string index in Rust.
