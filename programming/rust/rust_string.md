@@ -26,6 +26,32 @@ let string = "Rust is boring";
 string.replace("boring", "interesting");
 ```
 
+## string slice vs String
+
+Here is a code snippet that shows you which is which after running through a function.
+
+```rust
+fn string_slice(arg: &str) {
+    println!("{}", arg);
+}
+fn string(arg: String) {
+    println!("{}", arg);
+}
+
+fn main() {
+    string_slice("blue"); // Actual string literal
+    string("red".to_string()); // Converts to string struct
+    string(String::from("hi")); // Initializing string struct
+    string("rust is fun!".to_owned()); // Gives the literal an owner
+    string_slice("nice weather".into());
+    string(format!("Interpolation {}", "Station"));
+    string_slice(&String::from("abc")[0..1]);
+    string_slice("  hello there ".trim());
+    string("Happy Monday!".to_string().replace("Mon", "Tues"));
+    string("mY sHiFt KeY iS sTiCkY".to_lowercase());
+}
+```
+
 ## Character format
 
 Because Rust Strings are by default, UTF-8, there are some things you need to know. A character in a string that is ASCII will only take up a byte, but that same character as a `char` type would take up 4 bytes. Some non-ASCII characters in a string will also take up more than a byte. Because of the way that Rust indexing works, to get constant time indexing, it has to index by byte, and not by char. To attain char indexing, you would need to use a `char` array. Finally, because we are using byte indexing, when you index through a string, you will get a &u8. Here are some examples of the return of a string index in Rust.
