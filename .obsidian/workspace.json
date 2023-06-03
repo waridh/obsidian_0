@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/ch06_01_enums.md",
+                "file": "programming/rust/ch06_02_match.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/ch06_01_enums.md",
+                "file": "programming/rust/ch06_02_match.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/ch06_01_enums.md"
+                "file": "programming/rust/ch06_02_match.md"
               }
             }
           }
@@ -201,10 +201,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "961149dea611cbc2",
+  "active": "7fd134cc2c63a6bd",
   "lastOpenFiles": [
-    "programming/rust/ch06_00_enums.md",
     "programming/rust/ch06_01_enums.md",
+    "programming/rust/ch06_00_enums.md",
     "programming/rust/ch06_02_match.md",
     "programming/rust/ch06_03_if_let.md",
     "programming/rust/rust_abstract.md.md",
