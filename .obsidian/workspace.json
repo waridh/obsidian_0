@@ -11,8 +11,24 @@
             "id": "c36e3b6f72e3b3b9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c338f94aa1c1a366",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              }
             }
           },
           {
@@ -105,6 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,6 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +160,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md"
+              }
             }
           }
         ]
@@ -164,12 +184,14 @@
   },
   "active": "c36e3b6f72e3b3b9",
   "lastOpenFiles": [
+    "README.md",
+    "programming/java/java_abstract.md",
+    "programming/java",
+    "programming/rust/ch06_01_enums.md",
     "programming/rust/ch06_00_enums.md",
     "programming/rust/ch06_03_if_let.md",
     "programming/rust/ch06_02_match.md",
-    "programming/rust/ch06_01_enums.md",
     "programming/rust/rust_abstract.md.md",
-    "README.md",
     "communications/spl5/spl5_abstract.md",
     "programming/rust",
     "programming",
@@ -182,7 +204,6 @@
     "communications/spl5",
     "communications",
     "mathematics",
-    "computer_architecture",
-    "electronics"
+    "computer_architecture"
   ]
 }
