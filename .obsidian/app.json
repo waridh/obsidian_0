@@ -6,5 +6,6 @@
   ],
   "showLineNumber": true,
   "showFrontmatter": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview"
 }

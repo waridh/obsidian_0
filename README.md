@@ -10,7 +10,7 @@
 
 ## Protocols
 
-- [SPL-5: The whole book](communications/spl5/abstract)
+- [SPL-5: The whole book](communications/spl5/spl5_abstract.md)
 
 ## Textbooks
 
@@ -21,3 +21,6 @@
 ### Electronics
 
 ### Computer Science
+
+- [Rust](programming/rust/rust_abstract.md)
+- [Java](programming/java/java_abstract.md)
