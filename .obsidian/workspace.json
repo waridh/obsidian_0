@@ -44,38 +44,6 @@
             }
           },
           {
-            "id": "7c7f39a17e6849e4",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "54aa742c351e7171",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/rust_hash_map.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "f83912816433a31e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/ch10_00_modules.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "c338f94aa1c1a366",
             "type": "leaf",
             "state": {
@@ -108,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -174,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_hash_map.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +158,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_hash_map.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,9 +179,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "programming/rust/rust_hash_map.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -235,14 +199,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54aa742c351e7171",
+  "active": "c338f94aa1c1a366",
   "lastOpenFiles": [
-    "programming/rust/rust_hash_map.md",
     "programming/rust/ch10_00_modules.md",
+    "programming/rust/ch10_02_struct_visibility.md",
+    "programming/rust/rust_hash_map.md",
     "programming/rust/ch10_05_file_hierarchy.md",
     "programming/rust/ch10_04_super_and_self.md",
     "programming/rust/ch10_03_use_declaration.md",
-    "programming/rust/ch10_02_struct_visibility.md",
     "programming/rust/ch10_01_visibility.md",
     "programming/rust/ch06_00_enums.md",
     "programming/rust/ch06_03_if_let.md",
