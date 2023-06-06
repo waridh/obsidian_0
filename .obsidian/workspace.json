@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -181,6 +181,7 @@
   },
   "active": "48543c26ac0ea73b",
   "lastOpenFiles": [
+    "assets/IMG_0008.JPG",
     "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "communications/spl5/chapter_6/6.16_connections.md",
     "programming/rust/ch06_00_enums.md",
