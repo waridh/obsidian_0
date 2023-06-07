@@ -23,36 +23,36 @@
             "id": "48543c26ac0ea73b",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "9672935ec9253e0b",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
+                "file": "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "961149dea611cbc2",
+            "id": "af87b66c6c7ea2ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/ch06_01_enums.md",
-                "mode": "preview",
+                "file": "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
+                "mode": "source",
                 "source": true
               }
             }
-          },
-          {
-            "id": "386741c13a563a5a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
+                "file": "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
+                "file": "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.2_opening_a_connection.md"
+                "file": "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md"
               }
             }
           }
@@ -180,11 +180,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48543c26ac0ea73b",
+  "active": "af87b66c6c7ea2ed",
   "lastOpenFiles": [
-    "assets/IMG_0008.JPG",
+    "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
+    "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
     "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "communications/spl5/chapter_6/6.16_connections.md",
+    "programming/rust/ch06_01_enums.md",
+    "assets/IMG_0008.JPG",
     "programming/rust/ch06_00_enums.md",
     "communications/spl5/spl5_abstract.md",
     "programming/rust/ch10_00_modules.md",
@@ -202,7 +205,6 @@
     "programming/java/java_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "programming/java",
-    "programming/rust/ch06_01_enums.md",
     "programming/rust/ch06_02_match.md",
     "programming/rust",
     "programming",
