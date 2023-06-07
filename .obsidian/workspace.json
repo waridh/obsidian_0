@@ -11,8 +11,24 @@
             "id": "9672935ec9253e0b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1cb67473840713ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "communications/spl5/chapter_8/8.2.4.2_command_frame_handling_link_layer_errors.md",
+                "mode": "source",
+                "source": true
+              }
             }
           },
           {
@@ -39,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "186f3c852e7f15df",
@@ -106,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "communications/spl5/chapter_8/8.2.4.2_command_frame_handling_link_layer_errors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "communications/spl5/chapter_8/8.2.4.2_command_frame_handling_link_layer_errors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "communications/spl5/chapter_8/8.2.4.2_command_frame_handling_link_layer_errors.md"
+              }
             }
           }
         ]
@@ -163,14 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9672935ec9253e0b",
+  "active": "1cb67473840713ea",
   "lastOpenFiles": [
-    "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
+    "communications/spl5/chapter_8/8.2.4.2_command_frame_handling_link_layer_errors.md",
+    "communications/spl5/chapter_8",
     "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
+    "communications/spl5/chapter_6/6.16_connections.md",
+    "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
     "communications/communication_abstract.md",
     "README.md",
     "assets/IMG_0009.JPG",
-    "communications/spl5/chapter_6/6.16_connections.md",
     "communications/spl5/spl5_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
     "programming/rust/rust_string.md",
@@ -188,7 +210,6 @@
     "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "assets/IMG_0008.JPG",
     "programming/rust/ch06_03_if_let.md",
-    "Untitled",
     "programming/java/java_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "programming/java",
