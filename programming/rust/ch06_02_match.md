@@ -1,3 +1,6 @@
+---
+tags: rust, enum, match
+---
 # `match` Flow Control
 
 ## Overview

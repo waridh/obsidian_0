@@ -1,3 +1,6 @@
+---
+tags: rust, modules
+---
 # Visibility
 
 By default, the visibility of all things inside a module is set to private, meaning that functions and code outside the module cannot access the function. For code outside the module to access the value, the function/datatype must be declared as public. Here is a super example provided by the Rust book.

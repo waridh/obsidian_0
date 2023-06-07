@@ -1,5 +1,5 @@
 ---
-tag: rust
+tag: rust, modules
 ---
 # Modules
 

@@ -1,3 +1,6 @@
+---
+tags: rust, modules
+---
 # `use`
 
 The use declaration is used for binding a full module path to a new name for easier writing. Here is an example of how it is used.

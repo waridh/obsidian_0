@@ -1,3 +1,6 @@
+---
+tags: rust, string
+---
 # `String`
 
 This is a standard class that points to a string literal stored on the heap and contain information about the string that is being pointed to. This page will describe some useful string methods for reference. Something of note about strings is that they are UTF-8 encoding by default, you can use `OsString` if you need to use a non UTF-8. The documentation on this specific type is deep and vast, so it will be updated as I learn more about this language.

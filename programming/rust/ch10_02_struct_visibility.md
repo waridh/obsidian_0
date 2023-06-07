@@ -1,3 +1,6 @@
+---
+tags: rust, modules
+---
 # Struct Visibility
 
 Structs have an extra level of visibility with their fields. The default visibility is private, but that can be overridden with the `pub` modifier. This mechanic is implemented so that encapsulation could be held.

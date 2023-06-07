@@ -1,3 +1,6 @@
+---
+tags: rust, enum
+---
 # `enum`
 
 ## Definition

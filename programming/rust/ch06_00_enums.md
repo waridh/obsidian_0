@@ -1,3 +1,6 @@
+---
+tags: rust, enum
+---
 # Overview
 
 Enums are used to define a type by enumerating it's possible variants.

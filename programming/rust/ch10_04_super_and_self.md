@@ -1,3 +1,6 @@
+---
+tags: rust, modules
+---
 # `super` and `self`
 
 The point is to make code more readable, and make the program more clear. You can reduce unnecessary hardcoding of path. As always, here is some code examples for reference.
