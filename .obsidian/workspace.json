@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c338f94aa1c1a366",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/ch10_05_file_hierarchy.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "48543c26ac0ea73b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/rust_string.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "9672935ec9253e0b",
             "type": "leaf",
             "state": {
@@ -52,7 +28,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "186f3c852e7f15df",
@@ -182,7 +157,10 @@
   },
   "active": "af87b66c6c7ea2ed",
   "lastOpenFiles": [
+    "communications/communication_abstract.md",
+    "README.md",
     "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
+    "assets/IMG_0009.JPG",
     "communications/spl5/chapter_6/6.16_connections.md",
     "communications/spl5/spl5_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
@@ -201,7 +179,6 @@
     "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "assets/IMG_0008.JPG",
     "programming/rust/ch06_03_if_let.md",
-    "README.md",
     "Untitled",
     "programming/java/java_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
