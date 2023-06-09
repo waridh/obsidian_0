@@ -63,8 +63,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +129,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +145,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +166,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -191,10 +186,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cb67473840713ea",
+  "active": "9672935ec9253e0b",
   "lastOpenFiles": [
-    "communications/serdes.md",
     "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
+    "communications/serdes.md",
     "communications/spl5/chapter_8/8.2.4_command_frame_handling_link_layer_errors.md",
     "communications/spl5/chapter_8",
     "communications/spl5/chapter_6/6.16_connections.md",
