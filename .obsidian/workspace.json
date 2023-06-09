@@ -11,8 +11,12 @@
             "id": "9672935ec9253e0b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "programming/java/java_abstract.md",
+                "mode": "source",
+                "source": true
+              }
             }
           },
           {
@@ -31,12 +35,8 @@
             "id": "d2d34ad49092f4f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "communications/serdes.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -186,10 +187,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9672935ec9253e0b",
+  "active": "d2d34ad49092f4f1",
   "lastOpenFiles": [
-    "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
+    "programming/rust/ch06_03_if_let.md",
     "communications/serdes.md",
+    "programming/java/java_abstract.md",
+    "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
     "communications/spl5/chapter_8/8.2.4_command_frame_handling_link_layer_errors.md",
     "communications/spl5/chapter_8",
     "communications/spl5/chapter_6/6.16_connections.md",
@@ -213,8 +216,6 @@
     "programming/rust/ch06_00_enums.md",
     "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "assets/IMG_0008.JPG",
-    "programming/rust/ch06_03_if_let.md",
-    "programming/java/java_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "programming/java",
     "programming/rust",
