@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"05533c04f66b2460","x":-374,"y":-357,"width":400,"height":400,"type":"file","file":"communications/spl5/chapter_6/6.16.4_arbitration_fairness.md"},
+		{"id":"ac481ab72fc6a274","x":160,"y":-357,"width":400,"height":400,"type":"file","file":"communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md"}
+	],
+	"edges":[
+		{"id":"aeae8c8c46719599","fromNode":"05533c04f66b2460","fromSide":"right","toNode":"ac481ab72fc6a274","toSide":"left"}
+	]
+}
