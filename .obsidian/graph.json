@@ -34,18 +34,25 @@
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "latex",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
+  "textFadeMultiplier": -3,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.817708333333333,
+  "centerStrength": 0.541666666666667,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.586794841923828,
+  "scale": 0.40755602733847857,
   "close": true
 }

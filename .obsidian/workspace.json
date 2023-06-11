@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_string.md",
+                "file": "learn_latex/001_getting_started.md",
                 "mode": "source",
                 "source": true
               }
@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust.canvas",
+                "file": "learn_latex/001_getting_started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust.canvas",
+                "file": "learn_latex/001_getting_started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust.canvas"
+                "file": "learn_latex/001_getting_started.md"
               }
             }
           }
@@ -174,12 +173,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2d34ad49092f4f1",
+  "active": "9672935ec9253e0b",
   "lastOpenFiles": [
-    "programming/rust/rust.canvas",
-    "communications/spl5/chapter_6/arbitration.canvas",
     "quiz_2_notes.md",
+    "programming/rust/rust.canvas",
+    "learn_latex/001_getting_started.md",
+    "README.md",
     "programming/rust/rust_string.md",
+    "communications/spl5/chapter_6/arbitration.canvas",
     "programming/java/java_abstract.md",
     "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
     "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
@@ -189,7 +190,6 @@
     "communications/spl5/chapter_8",
     "communications/spl5/chapter_6/6.16_connections.md",
     "communications/communication_abstract.md",
-    "README.md",
     "assets/IMG_0009.JPG",
     "communications/spl5/spl5_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
@@ -204,7 +204,6 @@
     "programming/rust/ch06_02_match.md",
     "programming/rust/ch06_01_enums.md",
     "programming/rust/ch06_00_enums.md",
-    "communications/spl5/chapter_6/6.16.2_opening_a_connection.md",
     "assets/IMG_0008.JPG",
     "programming/java",
     "programming/rust",
