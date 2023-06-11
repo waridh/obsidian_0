@@ -35,18 +35,48 @@
             "id": "d2d34ad49092f4f1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "programming/rust/rust.canvas",
-                "viewState": {
-                  "x": -0.7256202000299652,
-                  "y": 0.1432537142166801,
-                  "zoom": -0.41258483439684224
-                }
+                "file": "learn_latex/latex_index.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "2789836b19839cc5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "3b19e455e7488f74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/java/java_abstract.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d79f576236c7d9b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_setup.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +142,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learn_latex/001_getting_started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +158,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learn_latex/001_getting_started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,9 +179,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "learn_latex/001_getting_started.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -173,15 +199,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9672935ec9253e0b",
+  "active": "2789836b19839cc5",
   "lastOpenFiles": [
-    "quiz_2_notes.md",
+    "programming/java/java_setup.md",
+    "programming/java/java_abstract.md",
+    "programming/rust/rust_setup.md",
+    "learn_latex/latex_index.md",
     "programming/rust/rust.canvas",
     "learn_latex/001_getting_started.md",
+    "quiz_2_notes.md",
     "README.md",
     "programming/rust/rust_string.md",
     "communications/spl5/chapter_6/arbitration.canvas",
-    "programming/java/java_abstract.md",
     "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
     "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
     "programming/rust/ch06_03_if_let.md",
@@ -202,8 +231,6 @@
     "programming/rust/ch10_01_visibility.md",
     "programming/rust/ch10_00_modules.md",
     "programming/rust/ch06_02_match.md",
-    "programming/rust/ch06_01_enums.md",
-    "programming/rust/ch06_00_enums.md",
     "assets/IMG_0008.JPG",
     "programming/java",
     "programming/rust",

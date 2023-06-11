@@ -31,6 +31,10 @@ figures.
 - Have a look at Zathura for linux when you get the chance, it's supposed to be
 a strong document viewer.
 
+## Pointers
+
+- [Getting started with LaTeX](001_getting_started.md)
+
 ## Citations
 
 - [Introduction to LaTeX](https://www.latex-project.org/about/)
