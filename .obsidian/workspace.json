@@ -52,6 +52,18 @@
             }
           },
           {
+            "id": "e3bdbf053bbcd3df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "learn_latex/latex_jotnote.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
             "id": "3b19e455e7488f74",
             "type": "leaf",
             "state": {
@@ -76,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -142,6 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learn_latex/latex_jotnote.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,6 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "learn_latex/latex_jotnote.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +193,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "learn_latex/latex_jotnote.md"
+              }
             }
           }
         ]
@@ -199,14 +215,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2789836b19839cc5",
+  "active": "e3bdbf053bbcd3df",
   "lastOpenFiles": [
+    "learn_latex/latex_index.md",
+    "learn_latex/001_getting_started.md",
+    "learn_latex/latex_jotnote.md",
     "programming/java/java_setup.md",
     "programming/java/java_abstract.md",
     "programming/rust/rust_setup.md",
-    "learn_latex/latex_index.md",
     "programming/rust/rust.canvas",
-    "learn_latex/001_getting_started.md",
     "quiz_2_notes.md",
     "README.md",
     "programming/rust/rust_string.md",
@@ -230,7 +247,6 @@
     "programming/rust/ch10_02_struct_visibility.md",
     "programming/rust/ch10_01_visibility.md",
     "programming/rust/ch10_00_modules.md",
-    "programming/rust/ch06_02_match.md",
     "assets/IMG_0008.JPG",
     "programming/java",
     "programming/rust",

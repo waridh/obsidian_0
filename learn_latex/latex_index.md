@@ -34,6 +34,7 @@ a strong document viewer.
 ## Pointers
 
 - [Getting started with LaTeX](001_getting_started.md)
+- [LaTeX Notes](latex_jotnote.md)
 
 ## Citations
 
