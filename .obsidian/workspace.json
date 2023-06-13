@@ -8,87 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9672935ec9253e0b",
+            "id": "532a08d131e60a98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learn_latex/001_getting_started.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "83034bbbb7fedc03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "quiz_2_notes.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d2d34ad49092f4f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learn_latex/latex_index.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "2789836b19839cc5",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "e3bdbf053bbcd3df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learn_latex/latex_jotnote.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "3b19e455e7488f74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/java/java_abstract.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d79f576236c7d9b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/rust_setup.md",
-                "mode": "source",
+                "file": "miscellaneous/apega_ethics.md",
+                "mode": "preview",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learn_latex/latex_jotnote.md",
+                "file": "miscellaneous/apega_ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learn_latex/latex_jotnote.md",
+                "file": "miscellaneous/apega_ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learn_latex/latex_jotnote.md"
+                "file": "miscellaneous/apega_ethics.md"
               }
             }
           }
@@ -215,16 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3bdbf053bbcd3df",
+  "active": "532a08d131e60a98",
   "lastOpenFiles": [
-    "learn_latex/latex_index.md",
+    "miscellaneous/ethical-practice.pdf",
+    "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "learn_latex/latex_jotnote.md",
-    "learn_latex/001_getting_started.md",
-    "programming/java/java_setup.md",
-    "programming/java/java_abstract.md",
+    "miscellaneous/apega_ethics.md",
+    "miscellaneous",
     "programming/rust/rust_setup.md",
-    "programming/rust/rust.canvas",
+    "programming/java/java_abstract.md",
+    "learn_latex/001_getting_started.md",
     "quiz_2_notes.md",
+    "learn_latex/latex_index.md",
+    "programming/java/java_setup.md",
+    "programming/rust/rust.canvas",
     "README.md",
     "programming/rust/rust_string.md",
     "communications/spl5/chapter_6/arbitration.canvas",
@@ -244,9 +179,6 @@
     "programming/rust/ch10_05_file_hierarchy.md",
     "programming/rust/ch10_04_super_and_self.md",
     "programming/rust/ch10_03_use_declaration.md",
-    "programming/rust/ch10_02_struct_visibility.md",
-    "programming/rust/ch10_01_visibility.md",
-    "programming/rust/ch10_00_modules.md",
     "assets/IMG_0008.JPG",
     "programming/java",
     "programming/rust",
@@ -255,7 +187,6 @@
     "computer_architecture/books",
     "communications/spl5/chapter_6",
     "communications/spl5",
-    "communications",
-    "mathematics"
+    "communications"
   ]
 }
