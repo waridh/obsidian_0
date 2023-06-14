@@ -7,6 +7,10 @@ tags: ethics, apega
 
 APEGA is the governing body of the province of Alberta, and all Engineers that operate out of it must follow the guidelines provided by the entity. Licensed engineers in the province must adhere by the Code of Ethics provided in order to uphold integrity, competence, dignity, and devotion to service.
 
+### The Code of Ethics
+
+#TODO: Need to finish studying for this one.
+
 ## The Codes
 
 There are five codes in the APEGA code of ethics
