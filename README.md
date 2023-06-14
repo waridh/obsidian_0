@@ -16,7 +16,7 @@
 
 ### Computer Architecture
 
-- [Digital Design and Computer Architecture: RISC-V](computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract)
+- [Digital Design and Computer Architecture: RISC-V](computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md)
 
 ### Electronics
 
