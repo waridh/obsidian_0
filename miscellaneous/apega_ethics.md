@@ -34,4 +34,37 @@ There are five codes in the APEGA code of ethics
 - You, your client, and your employer needs to know the scope of your responsibility. Write it down in a document.
 - You cannot exaggerate your capability, and you must present yourself accurately. (Else you might break code 1).
 - Providing advice can be dangerous. Only use your title when giving advice related to your own field. Do not give advice on a field that you are not competent in.
-- Authentication and Validation. When you get your stamp, do not 
+- Authentication and Validation. When you get your stamp, do not give it out without confirming that the work is up to standard, as you will be held responsible for any failures that comes under your name.
+- Engage experts if you do not possess the qualifications to do a certain job.
+- You need to maintain your competence in your area
+
+### 3. Integrity, Honesty, Fairness, and Objectivity
+
+- You need to document all errors or omissions. You should then communicate your findings to stakeholders.
+- You should discuss with the employer and client about the risk inherent in the projects and how you should manage those risks.
+- You should provide timely notification and advice to employers or clients when a project will not be successful.
+- Make objective decision and examining the output of those decisions to ensure they uphold the respect and dignity of others and do not show favouritism.
+- Upholding code 1 takes precedence over the interest of the client, or even the self.
+- Before accepting assignments, you should inform both the employers and the client about any conflict of interest that you may have.
+- Get rid of your bias.
+- Careful when expression opinions in public, the title of engineer holds weight
+- All information discussed between the client and the employer should be considered confidential and not be disclosed.
+- Inform employers and clients the consequence of getting your recommendation overruled.
+- Compensation for professional service 
+
+### 4. Statutes, Regulations, and Bylaws
+
+- Where ever you are working, you need to be aware of the engineering regulations there. 
+- You also need to make sure that both the employer and the clients are aware of the law. You might have to whistle blow if they decide to not follow the law anyways.
+
+### 5. Honour, Dignity, and Reputation
+
+- **Uphold human rights**
+- **Reconciliation**
+- **Treat others well:** Conduct towards anyone involved in a respectful, courteous, and fair manner.
+- **Reviewing the work of others:** Be sure to have all information before question the competency of another engineer, but also be sure to contact them if you find something you think is wrong with their work when reviewing.
+- **Off-duty conduct:** Do not engage in activities that could discredit the profession.
+
+## Conclusion
+
+This has been a very brief and rushed review of the APEGA Engineering code of conducts. I will be using this information to create some documents.
