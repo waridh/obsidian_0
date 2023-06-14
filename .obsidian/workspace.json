@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_abstract.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_abstract.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_abstract.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust_abstract.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "532a08d131e60a98",
   "lastOpenFiles": [
+    "programming/rust/rust_abstract.md",
     "miscellaneous/apega_ethics.md",
     "miscellaneous/ethical-practice.pdf",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
@@ -175,7 +176,6 @@
     "communications/spl5/spl5_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
     "programming/rust/rust_hash_map.md",
-    "programming/rust/rust_abstract.md",
     "programming/rust/ch10_05_file_hierarchy.md",
     "programming/rust/ch10_04_super_and_self.md",
     "programming/rust/ch10_03_use_declaration.md",

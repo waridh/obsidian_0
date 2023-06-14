@@ -22,7 +22,7 @@
 
 ### Computer Science
 
-- [Rust](rust_abstract.md)
+- [Rust](programming/rust/rust_abstract.md)
 - [Java](programming/java/java_abstract.md)
 
 ### Other Tools
