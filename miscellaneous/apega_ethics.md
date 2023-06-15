@@ -11,6 +11,33 @@ APEGA is the governing body of the province of Alberta, and all Engineers that o
 
 #TODO: Need to finish studying for this one.
 
+## Professions and Ethics
+
+As society and technology evolves, so has ethics and the ways it can be applied.
+
+### Profession and Self-Governance
+
+Normally, a profession will require training, formal qualification, and specialized knowledge. These skills are paired with experience to service the following responsibilities:
+- Render service based on advanced knowledge, skill, and judgement, which the public takes on trust
+- is charged with substantive public obligation and serves the public interest
+- Bound by a distinctive ethical code in its relationships with the public, clients, employers, and colleagues.
+
+To be able to perform their duties, professionals must have the trust of their clients, employers, and the general public. To maintain this confidence, the professional must demonstrate both technical and ethical competence.
+
+### Ethics
+
+Ethics refers to the study of principles surrounding the conduct of individuals, and reflects the belief and system of the guideline about what is right or wrong. Ethics specifically deals with the actions on individuals with sufficient knowledge and options available to them.
+
+In professional context, ethics applies to a set of values that guide the actions of individuals and organizations with regard to conduct and decision-making while carrying out professional duties and obligations.
+
+Here are two ways that following the code of ethics shapes an individual's practice:
+1. Adherence to the code of ethics provide a common set of values within the profession and thereby offers a reliable professional service to the public. Practising in a technically competent and ethical manner are two indivisible component vital to maintaining a relationship of trust within the profession and with the public in general.
+2. In an increasingly technological world, the public is looking to licensed professionals to provide societal leadership. The professional relationship of trust is a fundamental element upon which licensed professionals do their part in guiding society to adopt technology for the advancement of public welfare.
+
+### Excellence
+
+The Government gave members of APEGA certain responsibility and privileges, and in return the public expects competencies in their practices (Along with ethical conduct).
+
 ## The Codes
 
 There are five codes in the APEGA code of ethics

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "miscellaneous/apega_ethics.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "miscellaneous/ethical-practice.pdf",
+                "file": "miscellaneous/apega_ethics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "miscellaneous/ethical-practice.pdf",
+                "file": "miscellaneous/apega_ethics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "miscellaneous/ethical-practice.pdf"
+                "file": "miscellaneous/apega_ethics.md"
               }
             }
           }
@@ -163,10 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0624486cdae36f2",
+  "active": "532a08d131e60a98",
   "lastOpenFiles": [
-    "miscellaneous/apega_ethics.md",
     "miscellaneous/ethical-practice.pdf",
+    "miscellaneous/apega_ethics.md",
     "README.md",
     "programming/rust/rust_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
