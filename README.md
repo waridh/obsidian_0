@@ -1,8 +1,9 @@
-# obsidian_0
+# The Knowledge Vault
 
 ## What is this?
 
 - My first knowledge vault
+ - Attempting to contain and showcase the new things I learn as I progress through my engineering career
 - created to work with the Obsidian program
 - Has automated syncing for both desktops and mobile
 
