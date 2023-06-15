@@ -2,5 +2,6 @@
   "accentColor": "#ec6565",
   "textFontFamily": "Fira Sans",
   "monospaceFontFamily": "FiraCode NFM",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "translucency": true
 }

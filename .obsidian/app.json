@@ -7,5 +7,12 @@
   "showLineNumber": true,
   "showFrontmatter": true,
   "alwaysUpdateLinks": true,
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "strictLineBreaks": true,
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "assets"
 }
