@@ -13,13 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "miscellaneous/apega_ethics.md",
+                "file": "README.md",
                 "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "07849aa0629a431f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "e6c9cdf9c9b3a20f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "electronics/art_of_electronics/art_of_electronics_index.md",
+                "mode": "preview",
+                "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "miscellaneous/apega_ethics.md",
+                "file": "electronics/art_of_electronics/art_of_electronics_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "miscellaneous/apega_ethics.md",
+                "file": "electronics/art_of_electronics/art_of_electronics_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "miscellaneous/apega_ethics.md"
+                "file": "electronics/art_of_electronics/art_of_electronics_index.md"
               }
             }
           }
@@ -146,12 +169,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "058956b677ab3c49",
+  "active": "e6c9cdf9c9b3a20f",
   "lastOpenFiles": [
-    "electronics/art_of_electronics",
+    "electronics/art_of_electronics/02_01_01_current_amplifiers.md",
+    "electronics/art_of_electronics/02_01_00_introduction.md",
+    "assets/Pasted image 20230615173451.png",
+    "assets/art_of_electronics",
+    "assets/art_of_electronics/transistor_symbols.png",
+    "electronics/art_of_electronics/art_of_electronics_index.md",
     "README.md",
-    "miscellaneous/ethical-practice.pdf",
     "miscellaneous/apega_ethics.md",
+    "electronics/art_of_electronics",
+    "miscellaneous/ethical-practice.pdf",
     "programming/rust/rust_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "learn_latex/latex_jotnote.md",
@@ -177,16 +206,11 @@
     "communications/spl5/spl5_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
     "programming/rust/rust_hash_map.md",
-    "programming/rust/ch10_05_file_hierarchy.md",
-    "programming/rust/ch10_04_super_and_self.md",
-    "programming/rust/ch10_03_use_declaration.md",
     "assets/IMG_0008.JPG",
     "programming/java",
     "programming/rust",
     "programming",
     "computer_architecture/books/ddca_risc-v",
-    "computer_architecture/books",
-    "communications/spl5/chapter_6",
-    "communications/spl5"
+    "computer_architecture/books"
   ]
 }

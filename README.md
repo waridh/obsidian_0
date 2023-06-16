@@ -21,6 +21,8 @@
 
 ### Electronics
 
+- [The Art of Electronics](electronics/art_of_electronics/art_of_electronics_index.md)
+
 ### Computer Science
 
 - [Rust](programming/rust/rust_abstract.md)
