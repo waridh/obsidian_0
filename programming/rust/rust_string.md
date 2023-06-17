@@ -103,4 +103,20 @@ let s = String::from("hello");
 take_str(&s);
 ```
 
+So even though `s` is a String type, by putting `&` in front of it, you can convert a **`String`** into a **`&str`**.
+
+From the reading, what `.as_str()` does is that will specifically extract a **`&str`** out of your **`String`**. Ah, yeah, so `.as_str()` is especially useful when you are dealing with a **`&String`**, so that you don't have to go through the headache of dereferencing and then referencing again. Here is the example code they provide on the Rust by Example website:
+
+```rust
+trait TraitExample {}
+
+impl<'a> TraitExample for &'a str {}
+
+fn example_func<A: TraitExample>(example_arg: A) {}
+
+let example_string = String::from("example_string");
+example_func(&example_string); // This line breaks? hmm, weird.
+```
+
+
 ## Representation

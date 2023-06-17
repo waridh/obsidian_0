@@ -10,5 +10,6 @@ Rust is a low level programming capable of ignoring the memory allocation proble
 - Rust Book
 	- [6. Enums](ch06_00_enums.md)
 	- [10. Modules](ch10_00_modules.md)
+	- [19.2 Vectors](ch19_02_vectors.md)
 - Resources
 	- [`String`](rust_string.md)
