@@ -57,3 +57,7 @@ fn main() {
     println!("tuple is {:?}", mutable_tuple);
 }
 ```
+
+### Note
+
+This concept is actually a little different than what was learned in the fundamental CS courses, and thus, more practice should be had.

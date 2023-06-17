@@ -29,32 +29,6 @@
             }
           },
           {
-            "id": "e6c9cdf9c9b3a20f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "electronics/art_of_electronics/art_of_electronics_index.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "cd0ff19a504e7716",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/rust/rust_book/ch06_03_if_let.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "ac2364f7710409d1",
             "type": "leaf",
             "state": {
@@ -68,12 +42,12 @@
             }
           },
           {
-            "id": "c0535217b04d1dce",
+            "id": "d78e15d2f861207f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_by_example/ch08_08_while_let.md",
+                "file": "programming/rust/rust_book/ch06_00_enums.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -81,12 +55,12 @@
             }
           },
           {
-            "id": "d78e15d2f861207f",
+            "id": "d042e1dd217d7785",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+                "file": "programming/rust/rust_book/ch09_01_panic.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -107,7 +81,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -173,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+                "file": "programming/rust/rust_book/ch09_01_panic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+                "file": "programming/rust/rust_book/ch09_01_panic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md"
+                "file": "programming/rust/rust_book/ch09_01_panic.md"
               }
             }
           }
@@ -234,15 +208,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d78e15d2f861207f",
+  "active": "d042e1dd217d7785",
   "lastOpenFiles": [
-    "programming/rust/rust_by_example/ch08_08_while_let.md",
+    "programming/rust/rust_book/ch06_00_enums.md",
+    "programming/rust/rust_book/ch09_01_panic.md",
     "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+    "programming/rust/rust_by_example/ch08_08_while_let.md",
     "programming/rust/rust_abstract.md",
     "programming/rust/rust_by_example/ch18_00_error_handling.md",
     "programming/rust/rust_book/ch10_00_modules.md",
     "programming/rust/rust_by_example",
-    "programming/rust/rust_book/ch06_00_enums.md",
     "programming/rust/rust_book/ch06_03_if_let.md",
     "programming/rust/rust_book",
     "programming/cs_terminology.md",
@@ -272,7 +247,6 @@
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "learn_latex/latex_jotnote.md",
     "miscellaneous",
-    "programming/rust/rust_setup.md",
     "programming/rust/rust.canvas",
     "communications/spl5/chapter_6/arbitration.canvas",
     "communications/spl5/chapter_8",
