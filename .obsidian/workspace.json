@@ -47,8 +47,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/tcl/tcl_main.md",
-                "mode": "preview",
+                "file": "programming/rust/quiz_2_notes.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/tcl/tcl_main.md",
+                "file": "programming/rust/quiz_2_notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/tcl/tcl_main.md",
+                "file": "programming/rust/quiz_2_notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/tcl/tcl_main.md"
+                "file": "programming/rust/quiz_2_notes.md"
               }
             }
           }
@@ -184,6 +184,8 @@
   },
   "active": "cd0ff19a504e7716",
   "lastOpenFiles": [
+    "programming/rust/rust_hash_map.md",
+    "programming/rust/rust_abstract.md",
     "programming/tcl/tcl_main.md",
     "programming/tcl",
     "electronics/art_of_electronics/art_of_electronics_index.md",
@@ -196,14 +198,13 @@
     "miscellaneous/apega_ethics.md",
     "electronics/art_of_electronics",
     "miscellaneous/ethical-practice.pdf",
-    "programming/rust/rust_abstract.md",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "learn_latex/latex_jotnote.md",
     "miscellaneous",
     "programming/rust/rust_setup.md",
     "programming/java/java_abstract.md",
     "learn_latex/001_getting_started.md",
-    "quiz_2_notes.md",
+    "programming/rust/quiz_2_notes.md",
     "learn_latex/latex_index.md",
     "programming/java/java_setup.md",
     "programming/rust/rust.canvas",
