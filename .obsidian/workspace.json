@@ -47,8 +47,47 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/ch18_01_panic.md",
-                "mode": "preview",
+                "file": "programming/rust/rust_book/ch06_03_if_let.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ac2364f7710409d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_abstract.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c0535217b04d1dce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_by_example/ch08_08_while_let.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d78e15d2f861207f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -60,7 +99,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/ch19_02_vectors.md",
+                "file": "programming/rust/rust_by_example/ch19_02_vectors.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -68,7 +107,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -134,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/ch18_01_panic.md",
+                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/ch18_01_panic.md",
+                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/ch18_01_panic.md"
+                "file": "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md"
               }
             }
           }
@@ -195,21 +234,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd0ff19a504e7716",
+  "active": "d78e15d2f861207f",
   "lastOpenFiles": [
+    "programming/rust/rust_by_example/ch08_08_while_let.md",
+    "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
+    "programming/rust/rust_abstract.md",
+    "programming/rust/rust_by_example/ch18_00_error_handling.md",
+    "programming/rust/rust_book/ch10_00_modules.md",
+    "programming/rust/rust_by_example",
+    "programming/rust/rust_book/ch06_00_enums.md",
+    "programming/rust/rust_book/ch06_03_if_let.md",
+    "programming/rust/rust_book",
+    "programming/cs_terminology.md",
+    "programming/rust/ch08_06_if_let.md",
+    "programming/rust/rust_by_example/ch18_01_panic.md",
     "assets/IMG_0009.JPG",
     "assets/IMG_0008.JPG",
-    "programming/rust/ch18_01_panic.md",
     "programming/rust/rust_string.md",
-    "programming/rust/ch19_04_option.md",
+    "programming/rust/rust_by_example/ch19_04_option.md",
     "learn_latex/001_getting_started.md",
     "learn_latex/latex_index.md",
     "programming/tcl/tcl_main.md",
     "assets/Pasted image 20230615173451.png",
-    "programming/rust/ch18_00_error_handling.md",
     "programming/rust/quiz_2_notes.md",
-    "programming/rust/ch19_02_vectors.md",
-    "programming/rust/rust_abstract.md",
+    "programming/rust/rust_by_example/ch19_02_vectors.md",
     "programming/rust/rust_hash_map.md",
     "programming/tcl",
     "electronics/art_of_electronics/art_of_electronics_index.md",
@@ -225,18 +273,10 @@
     "learn_latex/latex_jotnote.md",
     "miscellaneous",
     "programming/rust/rust_setup.md",
-    "programming/java/java_abstract.md",
-    "programming/java/java_setup.md",
     "programming/rust/rust.canvas",
     "communications/spl5/chapter_6/arbitration.canvas",
-    "communications/spl5/chapter_6/6.16.5_arbitration_inside_an_expander_device.md",
-    "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
-    "programming/rust/ch06_03_if_let.md",
-    "communications/serdes.md",
     "communications/spl5/chapter_8",
     "programming/java",
-    "programming/rust",
-    "programming",
-    "computer_architecture/books/ddca_risc-v"
+    "programming/rust"
   ]
 }
