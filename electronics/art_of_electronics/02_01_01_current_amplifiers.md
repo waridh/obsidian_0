@@ -25,7 +25,7 @@ There are two variety of BJTs:
 
 ![Transistor symbols and package drawings](../../assets/art_of_electronics/transistor_symbols.png)
 
-![Figure 2: An ohmmeter's view of a transistor's terminal](../../assets/Pasted%20image%2020230615173451.png)
+![Figure 2: An ohmmeter's view of a transistor's terminal](../../assets/art_of_electronics/Pasted%20image%2020230615173451.png)
 
 ### Why are transistors useful?
 

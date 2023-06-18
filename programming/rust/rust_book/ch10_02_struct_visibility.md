@@ -37,7 +37,6 @@ fn main() {
     // Public structs with private fields cannot be constructed using field names.
     // Error! `ClosedBox` has private fields
     //let closed_box = my::ClosedBox { contents: "classified information" };
-    // TODO ^ Try uncommenting this line
 
     // However, structs with private fields can be created using
     // public constructors
@@ -46,7 +45,6 @@ fn main() {
     // and the private fields of a public struct cannot be accessed.
     // Error! The `contents` field is private
     //println!("The closed box contains: {}", _closed_box.contents);
-    // TODO ^ Try uncommenting this line
 }
 ```
 

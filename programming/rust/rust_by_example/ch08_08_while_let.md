@@ -72,7 +72,6 @@ After completing the Rustlings for this topic, there are some strange things to 
             optional_integers.push(Some(i));
         }
 
-        // TODO: make this a while let statement - remember that vector.pop also adds another layer of Option<T>
         // You can stack `Option<T>`'s into while let and if let
         while let Some(Some(integer)) = optional_integers.pop() {
             assert_eq!(integer, range);

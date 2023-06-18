@@ -19,7 +19,6 @@ mod my_module {
 
     /*The function takes a vector as an input. It was a little hard to figure out why it needed to be the way it is. Actually, doing a little reading on vectors would probably be a good idea*/
     pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
-        // TODO: Complete the output declaration!
         let mut output: Vec<String> = vec![]; // Declare a vector
         for (string, command) in input.iter() {
             // Here, we iterate over the vector and have two var for it.
@@ -53,7 +52,6 @@ output.push(String::from(string.as_str().to_uppercase()));
 
 #[cfg(test)]
 mod tests {
-    // TODO: What do we need to import to have `transformer` in scope?
     use crate::my_module::transformer;
     use super::Command;
 
