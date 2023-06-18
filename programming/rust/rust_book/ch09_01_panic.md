@@ -34,4 +34,14 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ## Using the `panic!` backtrace
 
-You 
+Here is an example that is causing `panic!` to get called:
+
+```rust
+fn main() {
+    let v = vec![1, 2, 3];
+
+    v[99];
+}
+```
+
+This will cause a compilation error because you are trying to access an index that has not been initialized. In Rust, we do not get an `undefined` behaviour like you would with C or C++. Instead Rust will just halt the program.
