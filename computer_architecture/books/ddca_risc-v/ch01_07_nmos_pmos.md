@@ -54,7 +54,7 @@ nMOS needs a p-type substrate and pMOS need an n-type substrate. To build both o
 
 ![Circuit icon for nMOS and pMOS](../../../assets/Pasted%20image%2020230618140443.png)
 
-# CMOS NOT Gate
+# 5. CMOS NOT Gate
 
 The 
 
