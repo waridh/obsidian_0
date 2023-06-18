@@ -60,7 +60,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_book/ch09_01_panic.md",
+                "file": "programming/rust/rust_book/ch09_02_result.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_book/ch09_01_panic.md",
+                "file": "programming/rust/rust_book/ch09_02_result.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_book/ch09_01_panic.md",
+                "file": "programming/rust/rust_book/ch09_02_result.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust_book/ch09_01_panic.md"
+                "file": "programming/rust/rust_book/ch09_02_result.md"
               }
             }
           }
@@ -205,13 +205,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "d042e1dd217d7785",
   "lastOpenFiles": [
-    "programming/rust/rust_book/ch06_00_enums.md",
     "programming/rust/rust_book/ch09_01_panic.md",
+    "programming/rust/rust_book/ch09_02_result.md",
+    "programming/rust/rust_book/ch06_00_enums.md",
     "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
     "programming/rust/rust_by_example/ch08_08_while_let.md",
     "programming/rust/rust_abstract.md",
@@ -245,7 +247,6 @@
     "electronics/art_of_electronics",
     "miscellaneous/ethical-practice.pdf",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
-    "learn_latex/latex_jotnote.md",
     "miscellaneous",
     "programming/rust/rust.canvas",
     "communications/spl5/chapter_6/arbitration.canvas",
