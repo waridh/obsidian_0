@@ -1,3 +1,6 @@
+---
+tags: tcl, guide
+---
 # TCL
 
 Old scripting language that is still being used in many companies because they have a lot of legacy code built on it.
