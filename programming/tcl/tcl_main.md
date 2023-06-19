@@ -160,3 +160,18 @@ regexp optionalSwitches patterns searchString fullMatch subMatch1 ... subMatchn
 ```
 
 Just need to register this into my brain when working with regex, since that is super common in industry.
+
+## Incrementing
+
+### Syntax
+
+```tcl
+# For incrementing by one
+incr x
+
+# For incrementing by a certain number
+incr x 52
+
+# For incrementing by a variable
+incr x $y
+```
