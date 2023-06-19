@@ -39,8 +39,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
-                "mode": "source",
+                "file": "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md"
+                "file": "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md"
               }
             }
           }
@@ -200,20 +200,21 @@
   },
   "active": "d042e1dd217d7785",
   "lastOpenFiles": [
+    "assets/Pasted image 20230618183400.png",
+    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
+    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
+    "assets/Pasted image 20230618180231.png",
+    "assets/Pasted image 20230618175625.png",
+    "assets/Pasted image 20230618174202.png",
+    "assets/andgate-4.jpg",
     "assets/2innor-3.jpg",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "assets/ddca/three_terminal_nand.jpg",
-    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
     "assets/Pasted image 20230618164934.png",
     "assets/Pasted image 20230618164015.png",
     "assets/Pasted image 20230618163249.png",
     "assets/Pasted image 20230618140443.png",
     "programming/rust/rust_abstract.md",
-    "assets/ddca/Pasted image 20230618132032.png",
-    "assets/IMG_0008.JPG",
-    "assets/art_of_electronics/transistor_symbols.png",
-    "assets/art_of_electronics/Pasted image 20230615173451.png",
-    "assets/ddca/Pasted image 20230618135229.png",
     "assets/ddca",
     "README.md",
     "programming/rust/quiz_2_notes.md",
@@ -238,7 +239,6 @@
     "programming/rust/rust_string.md",
     "programming/rust/rust_by_example/ch19_04_option.md",
     "learn_latex/latex_index.md",
-    "programming/tcl/tcl_main.md",
     "programming/tcl",
     "assets/art_of_electronics",
     "electronics/art_of_electronics",

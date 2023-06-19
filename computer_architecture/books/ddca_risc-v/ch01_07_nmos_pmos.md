@@ -107,9 +107,33 @@ In most design, one of the network should be ON, and the other OFF at all times 
 
 ### TWO-INPUT AND
 
+![](../../../assets/andgate-4.jpg)
 
+# 7. Transmission Gate
+
+![](../../../assets/Pasted%20image%2020230618174202.png)
+
+Sometimes designer will use an ideal switch that can pass both a 1 and a 0 well. To do this, just have a parallel combination of nMOS and pMOS. This is called a **transmission gate** or **pass gate**. This gate doesn't have a preference of drain and source, so it doesn't have such a naming scheme attached to it. The control signals are called **enable** $EN$ and $\bar{EN}$. When $EN=0$, $\bar{EN}=1$ and both gates are OFF. This turns the switch off. When $EN=1$, then the transistors are both ON, and thus current can flow through.
+
+# 8. Pseudo-nMOS Logic
+
+## Background information about speed
+
+An N-input CMOS NOR gate will use N nMOS in parallel, and N pMOS in series. The physics is here is that transistors in parallel are faster than transistors in series, due to having a shorter circuit, not needing all the switches to be turned on, etc. Secondarily, pMOS is slower than nMOS because of the nature of electrons and holes (holes are slower than electrons). Because of these factors, nMOS in parallel are very quick, but pMOS in series are very slow. These two components happen to make up the parts of a CMOS NOR gate.
+
+## What is Pseudo-nMOS logic?
+
+![](../../../assets/Pasted%20image%2020230618175625.png)
+
+Pseudo-nMOS logic gets rid of the network of parallel pMOS transistors and replace it with a weak pMOS that is always ON. They call this transistor a **weak pull-up transistor** and it is designed so that it will barely pass as a high when there are no pull-down transistors activated, and a single pull-down is able to turn it into a LOW state. This is how you are able to build fast NOR gates  with increasing numbers of inputs.
+
+![](../../../assets/Pasted%20image%2020230618180231.png)
+
+The downside is that there is a short circuit between $V_{DD}$ and $GND$ when the output is LOW.
+
+This circuit got its name from older manufacturing processes, when the replaced the pMOS transistor with a weak nMOS transistor because pMOS were not available yet.
 
 ## Pointers
 
-| Previous | [Home](ddca_risc-v_abstract.md) | Next |
+| Previous | [Home](ddca_risc-v_abstract.md) | [Next](ch01_08_power_consumption.md) |
 | -------- | ------------------------------- | ---- |
