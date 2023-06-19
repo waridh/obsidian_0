@@ -35,3 +35,9 @@ $$
 
 ## Practice Problems
 
+### Power Consumption
+
+A particular cell phone has an 8W-hr battery and operates at 0.707V. Suppose that, when it is in use, the cell phone operates at 2GHz. The total capacitance of the circuitry is 10 nF (10−8 Farads), and the activity factor is 0.05. When voice or data are active (10% of its time in use), it also broadcasts 3W of power out of its antenna. When the phone is not in use, the dynamic power drops to almost zero because the signal processing is turned off. But the phone also draws 100mA of quiescent current whether it is in use or not. Determine the battery life of the phone (a) if it is not being used and (b) if it is being used continuously.
+
+
+
