@@ -47,16 +47,6 @@
             }
           },
           {
-            "id": "489b80a1469548f2",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/ddca/three_terminal_nand.jpg"
-              }
-            }
-          },
-          {
             "id": "420f58165e4042d9",
             "type": "leaf",
             "state": {
@@ -200,20 +190,19 @@
   },
   "active": "d042e1dd217d7785",
   "lastOpenFiles": [
+    "assets/ddca/three_terminal_nand.jpg",
+    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
     "assets/powerex-5.jpg",
     "assets/Pasted image 20230618183400.png",
     "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
-    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
     "assets/Pasted image 20230618180231.png",
     "assets/Pasted image 20230618175625.png",
     "assets/Pasted image 20230618174202.png",
     "assets/andgate-4.jpg",
     "assets/2innor-3.jpg",
     "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
-    "assets/ddca/three_terminal_nand.jpg",
     "assets/Pasted image 20230618164934.png",
     "assets/Pasted image 20230618164015.png",
-    "assets/Pasted image 20230618163249.png",
     "programming/rust/rust_abstract.md",
     "assets/ddca",
     "README.md",
