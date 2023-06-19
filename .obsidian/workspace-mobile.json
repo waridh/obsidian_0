@@ -123,9 +123,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d66f2893a5d5cfc0",
+  "active": "fc90d653f3fb4365",
   "lastOpenFiles": [
-    "assets/2innor-3.jpg",
+    "assets/Pasted image 20230618174202.png",
+    "assets/Pasted image 20230618175625.png",
+    "assets/Pasted image 20230618183400.png",
+    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
+    "assets/Pasted image 20230618180231.png",
+    "assets/powerex-5.jpg",
+    "assets/Pasted image 20230618164934.png",
+    "assets/ddca/three_terminal_nand.jpg",
+    "assets/Pasted image 20230618164015.png",
+    "assets/Pasted image 20230618163249.png",
+    "assets/andgate-4.jpg",
     "assets/Untitled_Artwork.jpg",
     "communications/communication_abstract.md",
     "communications/spl5/chapter_6/6.16.3_smp_frame_priority.md",
@@ -162,14 +172,6 @@
     "programming/rust/rust_by_example/ch19_02_vectors.md",
     "programming/rust/rust_by_example",
     "programming/cs_terminology.md",
-    "programming/rust/rust_book/ch06_03_if_let.md",
-    "assets/art_of_electronics/Pasted image 20230615173451.png",
-    "assets/art_of_electronics/transistor_symbols.png",
-    "assets/ddca/Pasted image 20230618132032.png",
-    "assets/ddca/Pasted image 20230618135229.png",
-    "assets/IMG_0009.JPG",
-    "communications/spl5/chapter_6/arbitration.canvas",
-    "assets/IMG_0008.JPG",
-    "assets/Pasted image 20230618140443.png"
+    "communications/spl5/chapter_6/arbitration.canvas"
   ]
 }
