@@ -86,6 +86,19 @@
             }
           },
           {
+            "id": "cb472d4ffc90c1d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/tcl/tcl_variable.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "420f58165e4042d9",
             "type": "leaf",
             "state": {
@@ -99,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -165,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/tcl/tcl_namespace.md",
+                "file": "programming/tcl/tcl_variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/tcl/tcl_namespace.md",
+                "file": "programming/tcl/tcl_variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/tcl/tcl_namespace.md"
+                "file": "programming/tcl/tcl_variable.md"
               }
             }
           }
@@ -227,10 +240,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3a0ce6419af865ea",
+  "active": "cb472d4ffc90c1d8",
   "lastOpenFiles": [
-    "programming/tcl/tcl_variable_scope.md",
+    "programming/tcl/tcl_global.md",
+    "programming/tcl/tcl_variable.md",
     "programming/tcl/tcl_namespace.md",
+    "programming/tcl/tcl_variable_scope.md",
     "programming/tcl/tcl_import.md",
     "programming/tcl/tcl_main.md",
     "programming/tcl/tcl_thread.md",
@@ -266,8 +281,6 @@
     "programming/rust/rust_by_example",
     "programming/rust/rust_book/ch06_03_if_let.md",
     "programming/rust/rust_book",
-    "programming/cs_terminology.md",
-    "programming/rust/ch08_06_if_let.md",
     "programming/tcl",
     "assets/art_of_electronics",
     "electronics/art_of_electronics",
