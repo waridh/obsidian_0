@@ -99,6 +99,32 @@
             }
           },
           {
+            "id": "3aecc28c40cde954",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/tcl/tcl_tell_seek.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "8bda0507ca45bcbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/tcl/tcl_io.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "420f58165e4042d9",
             "type": "leaf",
             "state": {
@@ -112,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -178,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/tcl/tcl_main.md",
+                "file": "programming/tcl/tcl_io.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/tcl/tcl_main.md",
+                "file": "programming/tcl/tcl_io.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/tcl/tcl_main.md"
+                "file": "programming/tcl/tcl_io.md"
               }
             }
           }
@@ -240,14 +266,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cb472d4ffc90c1d8",
+  "active": "8bda0507ca45bcbe",
   "lastOpenFiles": [
+    "programming/tcl/tcl_tell_seek.md",
+    "programming/tcl/tcl_io.md",
+    "programming/tcl/tcl_main.md",
     "programming/tcl/tcl_variable.md",
     "programming/tcl/tcl_global.md",
     "programming/tcl/tcl_namespace.md",
     "programming/tcl/tcl_variable_scope.md",
     "programming/tcl/tcl_import.md",
-    "programming/tcl/tcl_main.md",
     "programming/tcl/tcl_thread.md",
     "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
     "assets/ddca/three_terminal_nand.jpg",
@@ -277,9 +305,7 @@
     "programming/rust/rust_book/ch06_00_enums.md",
     "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
     "programming/rust/rust_by_example/ch18_00_error_handling.md",
-    "programming/rust/rust_book/ch10_00_modules.md",
     "programming/rust/rust_by_example",
-    "programming/rust/rust_book/ch06_03_if_let.md",
     "programming/rust/rust_book",
     "programming/tcl",
     "assets/art_of_electronics",
