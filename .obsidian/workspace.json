@@ -117,7 +117,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/tcl/tcl_io.md",
+                "file": "programming/tcl/tcl_variable_scope.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -204,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/tcl/tcl_io.md",
+                "file": "programming/tcl/tcl_variable_scope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/tcl/tcl_io.md",
+                "file": "programming/tcl/tcl_variable_scope.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/tcl/tcl_io.md"
+                "file": "programming/tcl/tcl_variable_scope.md"
               }
             }
           }
@@ -268,12 +268,12 @@
   },
   "active": "8bda0507ca45bcbe",
   "lastOpenFiles": [
-    "programming/tcl/tcl_tell_seek.md",
-    "programming/tcl/tcl_io.md",
     "programming/tcl/tcl_main.md",
+    "programming/tcl/tcl_namespace.md",
+    "programming/tcl/tcl_io.md",
+    "programming/tcl/tcl_tell_seek.md",
     "programming/tcl/tcl_variable.md",
     "programming/tcl/tcl_global.md",
-    "programming/tcl/tcl_namespace.md",
     "programming/tcl/tcl_variable_scope.md",
     "programming/tcl/tcl_import.md",
     "programming/tcl/tcl_thread.md",
