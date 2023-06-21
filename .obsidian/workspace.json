@@ -117,7 +117,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/rust/rust_book/ch09_02_result.md",
+                "file": "programming/rust/rust_setup.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7aab930359fc6140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_misc_error.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -138,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -204,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_book/ch09_02_result.md",
+                "file": "programming/rust/rust_misc_error.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_book/ch09_02_result.md",
+                "file": "programming/rust/rust_misc_error.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust_book/ch09_02_result.md"
+                "file": "programming/rust/rust_misc_error.md"
               }
             }
           }
@@ -266,10 +279,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8bda0507ca45bcbe",
+  "active": "7aab930359fc6140",
   "lastOpenFiles": [
-    "programming/rust/rust_book/ch10_02_struct_visibility.md",
+    "programming/rust/rust_setup.md",
+    "programming/rust/rust_misc_error.md",
     "programming/rust/rust_book/ch09_02_result.md",
+    "programming/rust/rust_book/ch10_02_struct_visibility.md",
     "programming/rust/rust_book/ch10_04_super_and_self.md",
     "programming/tcl/tcl_variable_scope.md",
     "programming/tcl/tcl_main.md",
@@ -303,8 +318,6 @@
     "communications/spl5/chapter_6/6.16.4_arbitration_fairness.md",
     "learn_latex/001_getting_started.md",
     "programming/rust/rust_book/ch09_01_panic.md",
-    "programming/rust/rust_book/ch06_00_enums.md",
-    "programming/rust/rust_by_example/ch15_03_03_ref_pattern.md",
     "programming/rust/rust_by_example",
     "programming/rust/rust_book",
     "programming/tcl",
