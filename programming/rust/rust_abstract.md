@@ -15,7 +15,7 @@ I personally recommend starting up with **Rustlings** and then reading the other
 
 - Rust Book
 	- [6. Enums](rust_book/ch06_00_enums.md)
-	- [10. Modules](rust_book/ch10_00_modules.md)
+	- [10. Modules](rust_by_example/ch10_00_modules.md)
 - Rust by Example
 	- [19.2 Vectors](rust_by_example/ch19_02_vectors.md)
 - Resources
