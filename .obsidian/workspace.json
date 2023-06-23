@@ -169,7 +169,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/tk_widgets.md",
+                "file": "programming/rust/rust_book/ch10_01_generics.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "77599ec68cfe1c3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/rust/rust_book/ch10_02_traits.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -190,7 +203,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -256,7 +269,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/tk_widgets.md",
+                "file": "programming/rust/rust_book/ch10_02_traits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -273,7 +286,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/tk_widgets.md",
+                "file": "programming/rust/rust_book/ch10_02_traits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -296,7 +309,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/tk_widgets.md"
+                "file": "programming/rust/rust_book/ch10_02_traits.md"
               }
             }
           }
@@ -318,13 +331,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "db3daf97e1e59606",
+  "active": "77599ec68cfe1c3d",
   "lastOpenFiles": [
-    "programming/tk_intro.md",
+    "programming/rust/rust_book/ch10_01_generics.md",
+    "programming/rust/rust_book/ch10_02_traits.md",
     "programming/tk_widgets.md",
+    "programming/tk_intro.md",
     "programming/cs_terminology.md",
     "programming/tk",
-    "programming/rust/rust_book/ch10_01_generics.md",
     "programming/rust/rust_book/ch06_00_enums.md",
     "programming/rust/rust_by_example/ch10_00_modules.md",
     "programming/rust/rust_by_example/ch10_01_visibility.md",
@@ -355,7 +369,6 @@
     "assets/Pasted image 20230618174202.png",
     "assets/andgate-4.jpg",
     "assets/2innor-3.jpg",
-    "computer_architecture/books/ddca_risc-v/ddca_risc-v_abstract.md",
     "assets/Pasted image 20230618164934.png",
     "assets/Pasted image 20230618164015.png",
     "assets/ddca",
