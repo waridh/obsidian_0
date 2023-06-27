@@ -32,9 +32,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "b50cda4cca1dd082",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/bootstrapper/windows_custom_bootstrapper.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/rust/rust_book/ch06_00_enums.md",
+                "file": "programming/bootstrapper/windows_custom_bootstrapper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/rust/rust_book/ch06_00_enums.md",
+                "file": "programming/bootstrapper/windows_custom_bootstrapper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/rust/rust_book/ch06_00_enums.md"
+                "file": "programming/bootstrapper/windows_custom_bootstrapper.md"
               }
             }
           }
@@ -162,20 +175,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d78e15d2f861207f",
+  "active": "b50cda4cca1dd082",
   "lastOpenFiles": [
+    "programming/bootstrapper/windows_bootstrapper.md",
+    "programming/bootstrapper/windows_custom_bootstrapper.md",
+    "programming/rust/rust_book/ch06_00_enums.md",
+    "programming/bootstrapper",
     "programming/tcl/tcl_main.md",
     "programming/tcl/tcl_import.md",
     "programming/tcl/tcl_namespace.md",
     "programming/tcl/tcl_tell_seek.md",
     "programming/rust/rust_setup.md",
     "programming/rust/rust_misc_error.md",
-    "programming/rust/rust_book/ch06_00_enums.md",
     "programming/cs_terminology.md",
     "programming/rust/rust_book/ch10_01_generics.md",
     "programming/rust/rust_book/ch10_02_traits.md",
-    "programming/tk_widgets.md",
-    "programming/tk_intro.md",
+    "programming/tk/tk_widgets.md",
+    "programming/tk/tk_intro.md",
     "programming/tk",
     "programming/rust/rust_by_example/ch10_00_modules.md",
     "programming/rust/rust_by_example/ch10_01_visibility.md",
@@ -190,11 +206,9 @@
     "programming/tcl/tcl_variable.md",
     "programming/tcl/tcl_global.md",
     "programming/tcl/tcl_thread.md",
-    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
     "assets/ddca/three_terminal_nand.jpg",
     "assets/powerex-5.jpg",
     "assets/Pasted image 20230618183400.png",
-    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
     "assets/Pasted image 20230618180231.png",
     "assets/Pasted image 20230618175625.png",
     "assets/Pasted image 20230618174202.png",
@@ -209,7 +223,6 @@
     "assets/art_of_electronics",
     "electronics/art_of_electronics",
     "miscellaneous/ethical-practice.pdf",
-    "miscellaneous",
     "programming/rust/rust.canvas",
     "communications/spl5/chapter_6/arbitration.canvas"
   ]
