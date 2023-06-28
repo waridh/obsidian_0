@@ -64,3 +64,68 @@ So the `?` operator chooses based on the first expression. When `s == 1`, then i
 
 Slightly unrelated, the `?` operator is called a ternary operator because it takes three inputs.
 
+You can increase the amount of options by using nested conditional operators. So this is like working around a bad syntax on a programming language.
+
+```SystemVerilog
+module mux4(
+    input logic [3:0] d0, d1, d2, d3,
+    input logic [1:0] s,
+    output logic [3:0] y
+); // You can see that now selecting a signal in a bus is like indexing an array. I think that it's very intuitive and can be applied to actual programming languages.
+    assign y = s[1] ? (s[0] ? d3 : d2) :
+    (s[0] ? d1 : d0);
+endmodule
+```
+
+## 4.2.5 Internal Variables
+
+Sometimes, you need to break a complex design into smaller chunks. To do this, we make internal variables. For example, the full-adder is a circuit with three inputs and two outputs. Here is the logical equation:
+
+$$
+S = A \oplus B \oplus C_{in}
+$$
+$$
+C_{out} = AB + AC_{in} + BC_{in}
+$$
+
+We could actually define an intermediate variable and simplify the equation further by doing this:
+
+$$
+P = A \oplus B
+$$
+
+$$
+G = AB
+$$
+
+And this would change the original full adder module into this:
+
+$$
+S = P \oplus C_{in}
+$$
+
+$$
+C_{out} = G + C_{in}\left(A + B \right)
+$$
+
+$$
+C_{out} = G + C_{in}P
+$$
+
+### Implementing this in SystemVerilog
+
+```SystemVerilog
+module fulladder(
+    input logic a, b, cin,
+    output logic s, cout
+); // The things in the module declaration are basically the IO, but if it's not declared there, then it is an internal variable
+    logic p, g;
+
+    assign p = a ^ b;
+    assign g = a & b;
+    assign s = p ^ cin;
+    assign cout = g | (cin & p);
+endmodule
+```
+
+So the little weird thing that is a little specific to HDLs is that the order of declaration does not matter unlike a programming language where it does. This is because of the way the language is designed -> Not compiled for fast performance.
