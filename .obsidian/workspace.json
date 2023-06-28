@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md"
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md"
               }
             }
           }
@@ -190,8 +190,9 @@
   },
   "active": "d1018e8ef718c233",
   "lastOpenFiles": [
-    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
     "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
+    "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
+    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
     "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
     "computer_architecture/rtl_design/getting_started.md",
     "programming/bootstrapper/windows_custom_bootstrapper.md",
@@ -219,7 +220,6 @@
     "programming/rust/rust_book/ch09_02_result.md",
     "programming/rust/rust_by_example/ch10_02_struct_visibility.md",
     "programming/rust/rust_by_example/ch10_04_super_and_self.md",
-    "programming/tcl/tcl_variable_scope.md",
     "assets/ddca/three_terminal_nand.jpg",
     "assets/powerex-5.jpg",
     "assets/Pasted image 20230618183400.png",
