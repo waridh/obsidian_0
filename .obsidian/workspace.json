@@ -91,8 +91,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
-                "mode": "source",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md"
+                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md"
               }
             }
           }
@@ -242,10 +242,11 @@
   },
   "active": "c3bb020992fa5d70",
   "lastOpenFiles": [
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch01_00_better_programming.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/index.md",
     "programming/ocaml/ocaml_syntax.md",
     "programming/ocaml/ocaml_programming_c+e+b",
@@ -270,7 +271,6 @@
     "programming/cs_terminology.md",
     "programming/rust/rust_book/ch10_01_generics.md",
     "programming/rust/rust_book/ch10_02_traits.md",
-    "programming/tk/tk_widgets.md",
     "programming/tk",
     "programming/ocaml",
     "assets/ddca/three_terminal_nand.jpg",
