@@ -15,3 +15,54 @@ You can type in expressions in the OCaml toplevel. End an expression with a doub
 - : int = 42
 ```
 
+Binding values to a variable can be done with `let` just like rust.
+
+```OCaml
+# let x = 42;;
+
+val x : int = 42
+```
+
+And utop is nice enough to describe the value and type of what we declared.
+
+## 2.1.2 Functions
+
+This is a functional programming language, you better be good at making functions. A function can be declared as simply as doing this:
+
+```OCaml
+# let increment x = x + 1;;
+
+val increment : int -> int = <fun>
+```
+
+You can see that they use int as an input and int as an output. `<fun>` represent an unprintable function value.
+
+```OCaml
+# increment 0;;
+- : int = 1
+
+# increment(21);;
+- : int = 22
+
+# increment( increment(5));;
+- : int = 7
+```
+
+In OCaml vocab, we apply a function instead of call it. Just also know that OCaml doesn't require parenthesis or whitespace, and the preferred style is to use less parenthesis.
+
+## 2.1.3 Loading Code in Toplevel
+
+Toplevel doesn't just act as an interpreter, but also a quasi terminal. You can use toplevel command by putting `#` in from of the word, and toplevel will register that as something you are trying to make it do.
+
+Something simple that might be used very often for debugging would be: 
+```OCaml
+#use "ocamlfile.ml"
+```
+
+## 2.1.4 Workflow with Toplevel
+
+1. Edit the code in the file
+2. Load the code into toplevel using `#use`
+3. Interactive testing
+4. Exit toplevel
+

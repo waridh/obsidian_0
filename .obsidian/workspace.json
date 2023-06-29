@@ -91,15 +91,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
-                "mode": "preview",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "24d64f4b46fa8143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -178,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md"
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md"
               }
             }
           }
@@ -240,12 +253,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c3bb020992fa5d70",
+  "active": "24d64f4b46fa8143",
   "lastOpenFiles": [
-    "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch01_00_better_programming.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
+    "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch01_00_better_programming.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/index.md",
     "programming/ocaml/ocaml_syntax.md",
@@ -269,8 +284,6 @@
     "programming/rust/rust_setup.md",
     "programming/rust/rust_misc_error.md",
     "programming/cs_terminology.md",
-    "programming/rust/rust_book/ch10_01_generics.md",
-    "programming/rust/rust_book/ch10_02_traits.md",
     "programming/tk",
     "programming/ocaml",
     "assets/ddca/three_terminal_nand.jpg",
