@@ -16,7 +16,7 @@ Primitives are built on the most basic types: integers, floating point numbers, 
 
 Integer operators act just like those of Rust, so it will not be put in the notes.
 
-OCaml integers are signed twos complement and range from $-2^{62}$ to $2^{62}-1$. This is because OCaml uses 64-bit machine words, but one of the bit has been stolen by the OCaml implementation, and thus it's actually a 63 bit integer. That last bit is used to distinguish the value between a float and an integer. There is a library that gets you access to a true 64 bit integer in the **Int64** module. If you want arbitrary precision, then you can use the **Zarith** library. Normally though, the built in **int** type is good enough with the best performance.
+OCaml integers are signed twos complement and range from $-2^{62}$ to $2^{62}-1$. This is because OCaml uses 64-bit machine words, but one of the bit has been stolen by the OCaml implementation, and thus it's actually a 63 bit integer. That last bit is used to distinguish the value between a pointer and an integer. There is a library that gets you access to a true 64 bit integer in the **Int64** module. If you want arbitrary precision, then you can use the **Zarith** library. Normally though, the built in **int** type is good enough with the best performance.
 
 ### Floats
 
@@ -255,4 +255,83 @@ let f y = y * y;;
 
 This is called *alpha equivalence*.
 
-According to the 
+So there is actually a term for the way that you can implement the *Principle of Name Irrelevance*. 
+
+```OCaml
+let x = 5 in (let x = 6 in x) + x;;
+let x = 5 in (let y = 6 in y) + x;;
+```
+
+These two expressions are equivalent since we are using the *principle of name irrelevance*. There is a common name for this phenomenon; a binding of a variable *shadows* any old binding. Look, if you already have an understanding of scope, you don't have to learn a new metaphor to get better at it.
+
+Shadowing is not mutable assignment. 
+
+```OCaml
+let x = 5 in ((let x = 6 in x) + x)
+let x = 5 in (x + (let x = 6 in x))
+```
+
+and in toplevel:
+
+```OCaml
+
+# let x = 42;;
+val x : int = 42
+# let x = 22;;
+val x : int = 22
+```
+
+The thing with this example is, even though it looks like `x` is mutable, it actually isn't and we have just entered a new scope. This is effectively doing the following:
+
+```OCaml
+let x = 42 in
+  let x = 22 in
+    ... (* whatever else is typed in the toplevel *)
+```
+
+Now here is a utop that is worth looking at to get a better understanding of how scopes and let expressions work in OCaml;
+
+```OCaml
+# let x = 42;;
+val x : int = 42
+# let f y = x + y;;
+val f : int -> int = <fun>
+# f 0;;
+: int = 42
+# let x = 22;;
+val x : int = 22
+# f 0;;
+- : int = 42  (* x did not mutate! *)
+```
+
+So in a previous scope, you create a function from a value, and then in the new scope, you create a new value, the function was defined in a different scope and it will use that value present in that scope. This prevents incorrect and unexpected results from the function to occur.
+
+## 2.3.7 Type Annotation
+
+OCaml infers the type of every expression without the programmer needing to annotate what it is, but it can still be useful to annotate the type of the expression. This can be done like the following:
+
+```OCaml
+# (5 : int);;
+- : int = 5
+```
+
+This will act more like a correctness check, since annotating the wrong type will cause a compile time error to occur.
+
+```OCaml
+# (5 : float);;
+File "[27]", line 1, characters 1-2:
+1 | (5 : float)
+     ^
+Error: This expression has type int but an expression was expected of type
+         float
+  Hint: Did you mean `5.'?
+```
+
+### Syntax
+
+```OCaml
+(e : t)
+```
+
+| [Previous](ch02_02_compiling_ocaml.md) | [Next](ch02_04_functions.md) | 
+| -------------------------------------- | ---------------------------- |
