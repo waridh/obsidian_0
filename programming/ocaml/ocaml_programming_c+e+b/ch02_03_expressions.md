@@ -80,3 +80,179 @@ There are actually plenty of functions that converts things into strings. Here a
 ```
 
 So you can access chars from string indexing.
+
+
+## 2.3.2 More expressions
+
+OCaml has two equality operators: `=` and `==`. There are also two inequality operators: `<>` and `!=`. You will notice that there are pretty nice looking syntax for OCaml. `<>` is much more interesting then `!=`. They actually have functional differences. `=` and `<>` are structural equality while `==` and `!=` are physical equality. This will come into effect when working with imperative OCaml.
+
+## 2.3.3 Assertion
+
+Raising exception when the assertion doesn't hold true. Used like you would in C or C++. `assert e` evaluates `e`. When the result is `true` then nothing more happens, but if it does not evaluate to `true` then an exception is raised.
+
+## 2.3.4 If Expressions
+
+The syntax for OCaml simple conditional is:
+
+```OCaml
+if e1 then e2 else e3;;
+```
+
+Here is a toplevel example for a conditional:
+
+```OCaml
+# if 2 + 3 > 4 then "Hooray!" else "Darn!";;
+- : string = "Hooray!"
+```
+
+The difference from imperative languages here is that the conditional here can be put anywhere like an expression. This means you can directly edit the output from a conditional. Here is an example of that:
+
+```OCaml
+# 6 + (if 'a' = 'b' then 1 else 10);;
+- : int = 16
+```
+
+### else if
+
+Here is how you nest multiple if statements together:
+
+```OCaml
+if e1 then e2
+else if e3 then e4
+else if e5 then e6
+...
+else en;;
+```
+
+Due to the functional nature of the language, the final `else` is always required in OCaml.
+
+### Dynamic Semantics
+
+So the neat thing about what we have been writing with `if e1 then e2 else e3` is that the `e1`, `e2`, and `e3` are actually not OCaml variables, but meta variables representing expressions. To be precise with how OCaml if-then-else works, if `e1` evaluates to true, and if `e2` evaluates to a value `v` then the expression will evaluate to `v`. Otherwise, if `e1` evaluates to false and `e3` evaluates to `v`, then the expression will return `v`. `v` is used to represent a real OCaml value. This is a pretty nice and simple way of representing an expression, but later there will be a more mathematical way of representing such things.
+
+### Static Semantics
+
+The static semantic of an `if` expression:
+- If `e1` has type `bool` and `e2` has type `t` and `e3` has type `t` then the expression `if e1 then e2 else e3` has type `t`.
+
+This is a typing rule. It is used to describe how to type check an expression. `t` represent any OCaml type, and since we will be discussing has type a lot, there is a syntax for that as well: `e : t`. This is consistent with the toplevel response to `let` statements.
+
+```OCaml
+# let x = 42;;
+val x : int = 42
+
+```
+
+## Let Statements
+
+We know that let can be used to assign values to a variable, but there is also another use for it. You can use `let` as an expressions:
+
+```OCaml
+# let x = 42 in x + 1
+- : int = 43
+```
+
+So what is happening here is that the x is bound to the value of 42, and then it got immediately used in the `x + 1` expression. This is actually a different interaction than defining a value, since those do not evaluate to an expression. This is what will not work:
+
+```OCaml
+# (let x = 42) + 1;;
+
+File "[24]", line 1, characters 11-12:
+1 | (let x = 42) + 1
+               ^
+Error: Syntax error
+```
+
+Here is the weird thing. If you make this a `let` expression instead of a `let` definition, then you will get the desired interaction:
+
+```OCaml
+# (let x = 42 in x) + 1
+- : int = 43
+```
+
+To become even more fundamental in our understanding, think of `let` definitions as `let` expressions that have not provided the body of the expression yet. It looks a little insane, but here is how it works:
+
+```OCaml
+# let a = "big";;
+# let b = "red";;
+# let c = a ^ b;;
+...
+```
+
+Is understood by OCaml the same way as;
+
+```OCaml
+let a = "big" in
+let b = "red" in
+let c = a ^ b in
+...
+```
+
+### Syntax
+
+```OCaml
+let x = e1 in e2
+```
+
+Here, `x` is just an identifier. What's funny here is that identifiers are written in `snake_case` and not `camelCase`. `e1` here will act like a binding expression, and `e2` is the *body expression*.
+
+### Dynamic Semantic
+
+To evaluate `let x = e1 in e2`.
+
+1. Evaluate `e1` to value `v1`.
+2. Substitute `v1` for `x` in `e2` yielding new expression `e2'`.
+3. Evaluate `e2'` to a value `v2`.
+4. The result of evaluating the let expression is `v2`.
+
+### Static Semantic
+
+- If `e1 : t1` and if under the assumption that `x : t1` it holds that `e2 : t2` then `(let x = e1 in e2) : t2`.
+
+
+```OCaml
+let x : t = e1 in e2
+```
+
+## 2.3.6 Scope
+
+`Let` bindings will only be effective in the block of code that they occur. This is the normal scope behaviours that you would see in a modern language. For example:
+
+```OCaml
+let x = 42 in
+    (*y does not have meaning here*)
+    x + (let y = "3110" in 
+        (*y has meaning here*)
+        int_of_string y
+    );;
+```
+
+The scope of a variable is the area in which the name is useful. It's how expressions like this can run validly:
+
+```OCaml
+let x = 5 in
+    ((let x = 6 in x) + x)
+```
+
+But don't code like this, with bad naming like this, no-one collaborating would actually be able to do things.
+
+Actually, you would likely trace the expression to return 11. This is because the name doesn't really matter in the this thing called the *Principle of Name Irrelevance* where the name of the variable does not inherently matter. The following two functions are the same:
+
+$$
+f(x) = x^2
+$$
+$$
+f(y) = y^2
+$$
+
+To see this in OCaml, we can represent it with
+
+```OCaml
+let f x = x * x;;
+
+let f y = y * y;;
+```
+
+This is called *alpha equivalence*.
+
+According to the 

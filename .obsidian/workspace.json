@@ -86,32 +86,6 @@
             }
           },
           {
-            "id": "c3bb020992fa5d70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "16ae61f16713ef9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "system_architecture/designing_architecture.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
             "id": "24d64f4b46fa8143",
             "type": "leaf",
             "state": {
@@ -138,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -217,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system_architecture/designing_architecture.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "system_architecture/designing_architecture.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "system_architecture/designing_architecture.md"
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md"
               }
             }
           }
@@ -279,17 +253,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "16ae61f16713ef9f",
+  "active": "24d64f4b46fa8143",
   "lastOpenFiles": [
-    "programming/ocaml/ocaml_programming_c+e+b/Untitled 1.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "system_architecture/designing_architecture.md",
+    "programming/ocaml/ocaml_programming_c+e+b/Untitled 1.md",
     "programming/ocaml/ocaml_programming_c+e+b/Untitled.md",
     "system_architecture",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch01_00_better_programming.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/index.md",
