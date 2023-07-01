@@ -230,11 +230,88 @@ let int_id (x : int) = (x : int)
 
 ```OCaml
 let int_id' : int -> int = id
+val int_id' : int -> int = <fun>
 ```
 
 So what is happening here? I suppose we bounded the original `'a -> 'a` function to a new name with the restriction of `int -> int`. Supposedly we should be looking at this in terms of behaviour. The function `int_id` promises to take `int` as an input and also have `int` as an output. Even though the original `id` function makes many more promises, namely other types like `bool` as input and output. By binding `id` in this way, we basically throw away the other promises and leave it as only `int`. Doing this is pretty safe, so we can write some functions without types and then morph it into the type we need it to be later.
 
 Doing the converse is not true. We cannot go from `int -> int` to `'a -> 'a`. This will cause many issues when your input is not an `int`, but luckily for us, OCaml is actually smart enough to stop the assignment from going through. This interaction can be thought in terms of function assignments.
+
+```OCaml
+let id' : 'a -> 'a = fun x -> x + 1
+val id' : int -> int = <fun>
+```
+
+So you can see that OCaml automatically assign the type of `int` into the function since the operator being used are only for `int`. This will then prevent us from applying this function to arguments of non-integers.
+
+Here is another example that will help us understand how OCaml is choosing how to do this:
+
+```OCaml
+let x = e [in e']
+```
+
+OCaml will infer that `x` has the type `t`, and that includes some type variables `'a`, `'b`, etc. Then we are permitted to instantiate those type of variables. We'd then reveal what those type variables would be by using the argument, like in the example of `id 5` revealing `'a` as `int`. We could also reveal the type by using function type annotation, like with `let id_int' : int -> int = id`. Something to be careful about is the instantiation. For `'a -> 'b -> 'a`, you could do `int -> string -> int`, but `int -> string -> bool` would be illegal under this definition.
+
+## 2.4.6 Labeled and Optional Arguments
+
+### Labels
+
+For functions with many arguments, it would be a good idea to label them. Even though there are both types and names, sometimes, it will still be confusing to people reading the code. The example that will be analysed for this topic will be the function `String.sub`.
+
+```OCaml
+String.sub;;
+- : string -> int -> int -> string = <fun>
+```
+
+Just from this alone, it is not clear how you use the function. To avoid needing to consult the documentation, we can label the argument:
+
+```OCaml
+let f ~name1:arg1 ~name2:arg2 = arg1 + arg2;;
+val f : name1:int -> name2:int -> int = <fun>
+```
+
+Now you can apply the function without needing to keep the order of the argument. This is an example of applying this function like that:
+
+```OCaml
+f ~name2:3 ~name1:14;;
+- : int = 17
+```
+
+Now if you want the label to be the same as the variable name, there is a nice little shorthand that OCaml provide:
+
+```OCaml
+let f ~name1:name1 ~name2:name2 = name1 + name2;;
+let f ~name1 ~name2 = name1 + name2;;
+```
+
+Now the one issue with labels is that they can add clutter. If you combine the labels with explicit type annotation, then we'd have this:
+
+```OCaml
+let f ~name1:(arg1 : int) ~name2:(arg2 : int) = arg1 + arg2;;
+```
+
+
+### Optional Arguments
+
+Here is the syntax for applying optional arguments:
+
+```OCaml
+let f ?name:(arg1=8) arg2 = arg1 + arg2
+val f : ?name:int -> int -> int = <fun>
+```
+
+Now you can call the function with or without the argument:
+
+```OCaml
+f ~name:2 7;;
+- : int = 9
+
+f 9;;
+- : int = 17
+```
+
+## 2.4.7 Partial Application
+
 
 | [Previous](ch02_03_expressions.md) | [Next]() | 
 | ---------------------------------- | -------- |
