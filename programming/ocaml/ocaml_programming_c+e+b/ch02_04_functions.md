@@ -235,3 +235,6 @@ let int_id' : int -> int = id
 So what is happening here? I suppose we bounded the original `'a -> 'a` function to a new name with the restriction of `int -> int`. Supposedly we should be looking at this in terms of behaviour. The function `int_id` promises to take `int` as an input and also have `int` as an output. Even though the original `id` function makes many more promises, namely other types like `bool` as input and output. By binding `id` in this way, we basically throw away the other promises and leave it as only `int`. Doing this is pretty safe, so we can write some functions without types and then morph it into the type we need it to be later.
 
 Doing the converse is not true. We cannot go from `int -> int` to `'a -> 'a`. This will cause many issues when your input is not an `int`, but luckily for us, OCaml is actually smart enough to stop the assignment from going through. This interaction can be thought in terms of function assignments.
+
+| [Previous](ch02_03_expressions.md) | [Next]() | 
+| ---------------------------------- | -------- |

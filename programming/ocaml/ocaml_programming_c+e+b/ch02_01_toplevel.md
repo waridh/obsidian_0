@@ -66,3 +66,6 @@ Something simple that might be used very often for debugging would be:
 3. Interactive testing
 4. Exit toplevel
 
+
+| [Previous](ch02_00_basics_of_ocaml.md) | [Next](ch02_02_compiling_ocaml.md) | 
+| -------------------------------------- | ---------------------------------- |

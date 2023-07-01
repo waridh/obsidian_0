@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -191,12 +191,12 @@
   "active": "d1018e8ef718c233",
   "lastOpenFiles": [
     "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
     "programming/ocaml/ocaml_getting_started.md",
     "programming/ocaml/ocaml_types.md",
     "system_architecture/designing_architecture.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expression.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
