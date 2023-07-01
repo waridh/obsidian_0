@@ -39,41 +39,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ocaml/ocaml_getting_started.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
                 "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "595f4ce8a1b4e773",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programming/ocaml/ocaml_types.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "24d64f4b46fa8143",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "system_architecture/designing_architecture.md",
-                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -152,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system_architecture/designing_architecture.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "system_architecture/designing_architecture.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "system_architecture/designing_architecture.md"
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md"
               }
             }
           }
@@ -214,16 +188,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "24d64f4b46fa8143",
+  "active": "d1018e8ef718c233",
   "lastOpenFiles": [
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
+    "programming/ocaml/ocaml_getting_started.md",
+    "programming/ocaml/ocaml_types.md",
+    "system_architecture/designing_architecture.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expression.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
-    "system_architecture/designing_architecture.md",
     "programming/ocaml/ocaml_programming_c+e+b/Untitled 1.md",
     "programming/ocaml/ocaml_programming_c+e+b/Untitled.md",
     "system_architecture",
@@ -232,8 +208,6 @@
     "programming/ocaml/ocaml_programming_c+e+b/index.md",
     "programming/ocaml/ocaml_syntax.md",
     "programming/ocaml/ocaml_programming_c+e+b",
-    "programming/ocaml/ocaml_types.md",
-    "programming/ocaml/ocaml_getting_started.md",
     "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
     "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
     "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
