@@ -504,7 +504,61 @@ What the OCaml compiler does to recursive calls in tail position is that it will
 1. Change the main function into the helper function and add an extra augment: the accumulator, often named `acc`.
 2. Write a new "main" version of the function that will call the helper function. It will pass the original base case's return value as the initial value of the accumulator.
 3. Change the helper function to return the accumulator in the best case.
-4. 
+4. Change the helper function's recursive case. It now needs to do extra work on the accumulator argument before the recursive call, and this step is the hardest one.
 
-| [Previous](ch02_03_expressions.md) | [Next]() | 
-| ---------------------------------- | -------- |
+#### Example
+
+```OCaml
+(* [fact n] is [n] factorial *)
+let rec fact n =
+  if n = 0 then 1 else n * fact (n - 1)
+```
+
+```OCaml
+let rec fact_aux n acc1 acc2 =
+    if n = 0 then acc1 else fact (n - 1) (acc1 * acc2) (acc2 + 1);;
+
+let fact_tr n = fact_aux n 1 1;;
+```
+
+I was able to solve it using two arguments, but I'm not sure if there is a more optimized answer. Yeah, there was, I was too fixated on a pattern that was restrictive.
+
+```OCaml
+let rec fact_aux n acc =
+    if n = 0 then acc else fact (n - 1) (acc * n);;
+
+let fact_tr n = fact_aux n 1;;
+
+val fact_aux : int -> int -> int = <fun>
+val fact_tr : int -> int = <fun>
+```
+
+Whoop, factorials are large, so at `fact 50` we would already get an integer overflow. That's alright though, we could just use the `Zarith` library to get larger integers. Install using `opam install zarith`.
+
+To import the `zarith` library, do the following:
+
+```OCaml
+#require "zarith.top";;
+
+let rec zfact_aux n acc =
+    if Z.equal n Z.zero then acc else zfact_aux (Z.pred n) (Z.mul acc n);;
+
+let zfact_tr n = zfact_aux n Z.one;;
+
+zfact_tr (Z.of_in 50);;
+
+val zfact_aux : Z.t -> Z.t -> Z.t = <fun>
+val zfact_tr : Z.t -> Z.t = <fun>
+```
+
+What is insane here is that this will indeed calculate `zfact_tr 1_000_000`, but it might take several minutes.
+
+#### Quick facts about Zarith
+
+- `Z` is used to represent numbers, like they do in math.
+- `Z.n` where `n` is the name in the `Z`. This is like a module, and it might be, but I don't know yet.
+- `Z.t` is the big integer type.
+- `Z.equal` for equality, `Z.zero` for a big integer zero, `Z.pred` for predecessor, which is just subtracting by one. `Z.mul` is the multiplication function, `Z.one` makes a big integer one, and `Z.of_int` converts a integer primitive into a big integer.
+
+| [Previous](ch02_03_expressions.md) | [Next](ch02_05_documentation.md) | 
+| ---------------------------------- | -------------------------------- |
