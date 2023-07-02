@@ -312,6 +312,199 @@ f 9;;
 
 ## 2.4.7 Partial Application
 
+Okay starting the example, we can define an addition function as follows:
+
+```OCaml
+let add x y = x + y;;
+val add : int -> int -> int = <fun>
+```
+
+Right, now here is a similar function that is declared in a way that we haven't seen yet:
+
+```OCaml
+let addx x = fun y -> x + y;;
+val addx : int -> int -> int = <fun>
+```
+
+So what in happening here? The function `addx` takes `x` as an input and returns a function that is `int -> int` that will add `x` to whatever is passed to it. The type of `addx` is `int -> int -> int`, and the type of `add` is also `int -> int -> int`. From the perspective of the type they look like the same function. The thing is that the form of `addx` suggests something interesting.
+
+We can apply `addx` to a single argument:
+
+```OCaml
+let add5 = addx 5
+val add5 : int -> int = <fun>
+```
+
+```OCaml
+add5 2;;
+- : int = 7
+```
+
+Oh wow! It's like a way of storing values in a function. Wait!!! You can do the exact same thing with `add`.
+
+```OCaml
+let add5 = add 5;;
+val add5 : int -> int = <fun>
+
+add5 2;;
+- : int = 7
+```
+
+This is called partial application, and it's essentially partially applying the function by just filling it with one of many arguments. Since this feature exists, here is are three semantically equivalent, but syntactically different functions:
+
+```OCaml
+let add x y = x + y;;
+let add x = fun y -> x + y;;
+let add = fun x -> (fun y -> x + y);; (* This is the purely lambda way *)
+```
+
+When you really think about it, `add` is just a function that takes an argument `x` and return a function `fun y -> x + y`. Well, this fact revolutionize how you program with OCaml...
+
+## 2.4.8 Function Associativity
+
+So we're at the insane stage in learning about OCaml. The deep state information is...
+
+**EVERY SINGLE OCAML FUNCTION TAKES ONLY ONE ARGUMENT!!!!**
+
+What?!?!?!?! Why? Okay, let's use the `add` example again. What we know is that `let add x y = x + y` is semantically the same as `let add = fun x -> (fun y -> x + y)` and in general:
+
+```OCaml
+let f x1 x2 ... xn = e
+```
+
+is semantically equivalent to
+
+```OCaml
+let f =
+    fun x1 ->
+        (fun x2 ->
+            (...
+                (fun xn -> e)...))
+```
+
+So when we really think about it, `f` isn't a function that takes multiple arguments, but a function that takes just one. This means that when you look at types:
+
+```OCaml
+t1 -> t2 -> t3 -> t4
+```
+
+is going to be the same as:
+
+```OCaml
+
+t1 -> (t2 -> (t3 -> t4))
+```
+
+Basically, function types are *right associative*, meaning that there will be implicit parentheses around the function types starting from right to left. Basically, the intuition is that functions will take a single argument and return a new function that expects the remaining argument.
+
+Function application are the reverse. It is *left associative*, meaning that there are implicit parentheses around function application from left to right.
+
+```OCaml
+e1 e2 e3 e4
+((e1 e2) e3 e4)
+```
+
+The intuition here is the the left most function grabs the neighbour and turn into a new function.
+
+## 2.4.9 Operators as Functions
+
+The addition operator `+` has type `int -> int -> int`. It is normally `infix`, e.g, `3 + 4`. By putting parentheses around it, we can make it a prefix operator:
+
+```OCaml
+( + ) 3 4;;
+- : int = 7
+```
+
+This is insane, so here is an example that makes use of it:
+
+```OCaml
+let add3 = ( + ) 3
+val add3 : int -> int = <fun>
+add3 2
+- : int = 5
+```
+
+The same technique works for any built-in operator.
+
+Normally the spaces are unnecessary, we could write `(+)`, but `( + )` is convention due to the multiplication symbol `( * )` since `(*)` would be parsed as the beginning of a comment. Actually, the reverse is also true, and we can define our own infix operator by doing this:
+
+
+```OCaml
+let ( ^^ ) = fun x -> (fun y -> max x y);;
+2 ^^ 3;;
+- : int = 3
+```
+
+The rules are still very not that concrete yet, so avoiding infix operators is a good way to program in OCaml right now.
+
+## 2.4.10 Tail Recursion
+
+```OCaml
+(** [count n] is [n], computed by adding 1 to itself [n] times. That is,
+    this function counts up from 1 to [n]. *)
+let rec count n =
+    if n = 0 then 0 else 1 + count (n - 1);;
+
+val count : int -> int = <fun>
+```
+
+We counting to 10 is no problem, and neither is counting to 100,000:
+
+```OCaml
+count 10
+count 100_000
+```
+
+The real issue occurs when we are trying to count to 1,000,000:
+
+```OCaml
+Stack overflow during evaluation (looping recursion?)
+```
+
+I can tell that it is because we are creating multiple functions in the stack and it just kept growing because it's trying to get into the base case.
+
+This is indeed the case, and the operating system is what limits it. This is for the sake of safety so that users will not run programs that will take up all the memory available on the system and crash it.
+
+### Tail Recursion
+
+There is a solution to this type of recursive calls, and it is called *tail-call optimization*. This is like dynamic programming from bottom up, but the programmer will have to do some work to get this to happen.
+
+So let's have a look at why the `count` function was having issues:
+
+```OCaml
+let rec count n =
+    if n = 0 then 0 else 1 + count (n - 1)
+```
+
+So the issue here is that after the recursive call to `count (n - 1)`, there is still calculations remaining  in this function application, since the function still needs to add `1` to the result of the recursive call. So how could we rewrite the function so that it would not need to do more computation after the recursive call? Here is an example:
+
+```OCaml
+let rec count_aux n acc =
+    if n = 0 then acc else coun_aux (n - 1) (acc + 1)
+
+let count_tr n = count_aux n 0
+```
+
+```OCaml
+val count_aux : int -> int -> int = <fun>
+
+val count_tr : int -> int = <fun>
+```
+
+So here is the difference with this version vs the original `count`. We are also passing an accumulator in that will increment each time it enters another layer of recursion. This is the new return and it is a smart way of keeping the program optimized as you don't need to go back in layers of recursions to grab or calculate something.
+
+And after setting up the `acc` to `0`, we can bind it to a new name that will function just like the original `count` but this time, it will actually not fill up the call stack thanks to the OCaml compiler. The OCaml compiler will notice when a recursive call is in *tail position*, which is the technical term for "there is no more computation after it returns". The recursive call to `count_aux` is in tail position but `count` is not.
+
+What the OCaml compiler does to recursive calls in tail position is that it will just reuse the stack frame that did the recursive call to the function, saving both space and time. This is insane because this will just reduce the stack space requirement from linear to constant. Incredible, I think that we are coming back to using recursion in our programs again.
+
+*Note: As a new programming, do not fixate too much on tail recursion. Like with all of engineering, the first draft should not be the final draft, and sometimes, you should put time and energy into getting it working before you make it fast.*
+
+### How to do tail recursions?
+
+1. Change the main function into the helper function and add an extra augment: the accumulator, often named `acc`.
+2. Write a new "main" version of the function that will call the helper function. It will pass the original base case's return value as the initial value of the accumulator.
+3. Change the helper function to return the accumulator in the best case.
+4. 
 
 | [Previous](ch02_03_expressions.md) | [Next]() | 
 | ---------------------------------- | -------- |
