@@ -31,4 +31,24 @@ let rec sum lst = ...
 
 ## 2.5.3 Precondition and Postcondition
 
+```OCaml
+(** [lowercase_ascii c] is the lowercase ASCII equivalent of
+    character [c]. *)
 
+(** [index s c] is the eindex of the first occurrence of
+    character [c] in string [s]. Raises: [Not_found]
+    if [c] does not occur in [s]. *)
+
+(** [random_int bound] is a random integer between 0 (inclusive)
+    and [bound] (exclusive). Requires: [bound] is greater than 0
+    and less than 2^30. *)
+```
+
+The `randomm_int` function `Requires` is a kind of precondition. It wants the input to be in a certain range. In the main documentation of that same function it also defines the post condition by saying what the return range must be in.
+
+### Raises
+
+The "Raises" clause in the documentation in `index` is another kind of postcondition. It guarantees that the function raises an exception. It is not a precondition because it states what the function will output depending on the input, but not a bound on the input itself.
+
+| [Previous](ch02_04_functions.md) | [Next](ch02_06_printing.md) | 
+| -------------------------------- | --------------------------- |
