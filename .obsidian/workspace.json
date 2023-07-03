@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_02_variants.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_02_variants.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_02_variants.md",
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_02_variants.md"
+                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md"
               }
             }
           }
@@ -224,9 +224,10 @@
   },
   "active": "25b1abbb22e4310f",
   "lastOpenFiles": [
+    "programming/ocaml/ocaml_programming_c+e+b/index.md",
+    "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_02_variants.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_00_data_and_types.md",
-    "programming/ocaml/ocaml_programming_c+e+b/index.md",
     "README.md",
     "programming/ocaml/ocaml_index.md",
     "system_architecture/designing_architecture.md",
@@ -251,7 +252,6 @@
     "programming/ocaml/ocaml_syntax.md",
     "programming/ocaml/ocaml_programming_c+e+b",
     "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
-    "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
     "computer_architecture/rtl_design",
     "programming/bootstrapper",
     "programming/tk",

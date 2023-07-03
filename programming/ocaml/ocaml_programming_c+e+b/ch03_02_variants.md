@@ -37,5 +37,10 @@ let x = D
 What happens here? Simple, the type that is defined later will win. In this example `x : b`. This makes it good convention to put a prefix character on the constructor names, such as:
 
 ```OCaml
-
+type ptype = TNormal | TFire | TWater
 ```
+
+It is less likely to have a constructor collision with other `enum`.
+
+| [Previous](ch03_01_lists.md) | [Home](ch03_00_data_and_types) | [Next](ch03_03_ounit.md) | 
+| ---------------------------- | ------------------------------ | ------------------------ |
