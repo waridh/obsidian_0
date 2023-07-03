@@ -25,6 +25,7 @@
 
 ### Computer Science
 
+- [OCaml](programming/ocaml/ocaml_index.md)
 - [Rust](programming/rust/rust_abstract.md)
 - [Java](programming/java/java_abstract.md)
 

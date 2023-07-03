@@ -1,24 +1,24 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
+    {
+      "query": "ocaml",
+      "color": {
+        "a": 1,
+        "rgb": 13804901
+      }
+    },
     {
       "query": "rust",
       "color": {
         "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "java",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
+        "rgb": 16755200
       }
     },
     {
@@ -26,6 +26,13 @@
       "color": {
         "a": 1,
         "rgb": 11392604
+      }
+    },
+    {
+      "query": "java",
+      "color": {
+        "a": 1,
+        "rgb": 10027263
       }
     }
   ],
@@ -39,6 +46,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.2591413591880704,
-  "close": false
+  "scale": 0.17488694993630696,
+  "close": true
 }

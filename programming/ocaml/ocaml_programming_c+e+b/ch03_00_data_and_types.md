@@ -24,4 +24,4 @@ Some other types that are covered includes:
 
 ## Index
 1. [Lists](ch03_01_lists.md)
-2. 
+2. [Variants](ch03_02_variants.md)

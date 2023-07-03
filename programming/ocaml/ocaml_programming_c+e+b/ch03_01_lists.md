@@ -130,4 +130,168 @@ Something big to note is that lists are actually immutable and OCaml programmers
 let inc_first lst = match lst with [] -> [] | h :: t -> h + 1 :: t
 ```
 
-So we are actually returning a 
+So we are actually returning a new list every time we want to change a pre-existing list. The good thing about the OCaml compiler is that it has smart people working on it, so it will not be wasteful when dealing with cases like these. Instead of copying the whole list to change one element, it will share the tail list with the original list while changing the head.
+
+## 3.1.4 List pattern matching
+
+Starting by looking closer at pattern matching:
+
+```OCaml
+match e with
+| p1 -> e1
+| p2 -> e2
+| ...
+| pn -> en
+```
+
+Each `| pi -> ei` is called a branch or case for a pattern match. In our current knowledge, `pi` could be:
+- A variable
+- An underscore `_` which is called a wildcard.
+- `[]`
+- `p1 :: p2`
+- `[p1; ...; pn]`
+
+No variable name can appear more than once in a pattern match e.g., `x :: x` cannot be used.
+
+### Dynamic Semantics with Pattern Matching
+
+Pattern matching is made up of two inter-related tasks. The first being that matching, where you are trying to find patterns with the same shapes. The second is about the variable binding introduced by the pattern.
+
+For example:
+
+```OCaml
+match 1 :: [] with [] -> false | h :: t -> h >= 1 && List.length t = 0
+- : bool = true
+```
+
+If we are looking at the second branch, we see that `h -> 1` and `t -> []`. So to further dig deeper into the semantics of how match works, we can try:
+
+- The pattern `x` matches any value `v` and produces a binding `x -> v`.
+- The pattern `_` matches any value and produces no bindings.
+- The pattern `[]` matches the value `[]` and produce no binding.
+- If `p1` matches `v1` and produces a set of bindings $b_1$ and `p2` matches `v2` and produces a set of binding $b_2$ then `p1 :: p2` matches `v1 :: v2` and produces the set $b_1 \cup b_2$. For this to work, `v2` has to be a list since it's on the right hand side of `::`. The union of $b_1$ and $b_2$ will never have an issue of a repeating element because you cannot use the same names in match.
+- If for all `i` in `1..n`, it holds that `pi` matches `vi` then `[p1; ...; pn]` matches with `[v1; ...; vn]` and produces the set $\bigcup_i b_i$ of bindings.
+
+Alright, so let's analyse the mechanics of matching with the following example:
+
+```OCaml
+match e with p1 -> e1 | ... | pn -> en
+```
+
+- Evaluate `e` to `v`
+- Match `v` with all `pi` in the order that they appear in the match.
+- If `v` does not match with any `pi` then raise a `Match_failure` exception.
+- Stop trying to match on a match, and let `pi` be the pattern and $b_i$ be the variable binding produced by matching `v` with `pi`.
+- Substitute that binding inside of `ei` and produce the new expression `e'`.
+- Evaluate the expression `e'` to a value `v'`.
+- `v'` is the result of the match expression.
+
+### Static Semantics
+
+- If `e : ta` and for all `i`, it holds that `pi : ta` and `ei : tb` then `(match e with p1 -> e1 | ... | pn -> en) : tb`.
+
+### Additional Static Checking
+
+Other than the type checking rule, the compiler will also check for two other rules:
+
+1. **Exhaustiveness:** Making sure that there isn't an unhandled case.
+2. **Unused Branched:** The compiler makes sure that there isn't a pointless case being programed.
+
+## 3.1.5 Deep Pattern Matching
+
+Patterns can be nested, so you can do some more logical checks that gets you nice answers:
+
+- `_ :: []`. Matches all lists with exactly one element.
+- `_ :: _`.  Matches all lists with at least one elements.
+- `_ :: _ :: []`. Matches lists with exactly two elements.
+- `_ :: _ :: _ :: _`. Matches lists with at least three elements.
+
+## 3.1.6 Immediate Matches
+
+So some sugar coding that OCaml has for when you are immediately pattern matching against the final arguments. Instead of doing the the following:
+
+```OCaml
+let rec sum lst = 
+match lst with [] -> 0 | h :: t -> h + sum t
+```
+
+You can write the following instead:
+
+```OCaml
+let rec sum = function [] -> 0 | h :: t -> h + sum t
+```
+
+## 3.1.7 OCamldoc and List syntax
+
+Learning how to document with lists would also be a nice little addition to our skillset, so here it is:
+
+```OCaml
+(** [hd lst] returns the first element of the [lst].
+    Raises: [Failure "hd"] if [lst = []]. *)
+```
+
+## 3.1.8 List Comprehensions
+
+OCaml does not need this feature, so we don't need to talk about it. Higher order programming takes care of that. This feature will be talked about later.
+
+## 3.1.9 Tail Recursion
+
+So how do we use tail recursion with list and matching? Here is two examples:
+
+```OCaml
+let rec sum (l : int list) : int = 
+match l with
+| [] -> 0
+| x :: xs -> x + (sum xs)
+
+let rec sum_plus_acc (acc : int) (l : int list) : int =
+match l with
+| [] -> acc
+| x :: xs -> sum_plus_acc (acc + x) xs
+
+let sum_plus : int list -> int = sum_plus_acc 0
+```
+
+```OCaml
+val sum : int list -> int = <fun>
+val sum_plus_acc : int -> int list -> int = <fun>
+val sum_plus : int list -> int = <fun>
+```
+
+When the function is going to work on a really long list, we should design it to be tail recursive, so that we don't have a large space complexity.
+
+*Note: Tail recursion is not strictly better than the regular implementation, especially when working with functions that deal with smaller sizes as the overhead associated with specifically reversing a list.*
+
+Here is an example of a function that will create a list of an arbitrary size:
+
+```OCaml
+(** [from i j l] is the list containing the integers from [i] to [j],
+    inclusive, followed by the list [l].
+    Example:  [from 1 3 [0] = [1; 2; 3; 0]] *)
+let rec from i j l = if i > j then l else from i (j - 1) (j :: l)
+
+(** [i -- j] is the list containing the integers from [i] to [j], inclusive. *)
+let ( -- ) i j = from i j []
+
+let long_list = 0 -- 1_000_000
+```
+
+What we should understand here is that it is tail recursive, and the design of OCaml actually makes use create the list from the last element backwards. It will grow from the `1_000_001` element and back to the first.
+
+But also, if you want to do something like this, there is actually a library code that already does the same thing:
+
+```OCaml
+List.init 1_000_000 Fun.id
+```
+
+What this expression does is that it takes `List.init len f` and create a list of length `len` and the elements being:
+
+```OCaml
+[f 0; f 1; ...; f (len - 1)]
+```
+
+And this is still all done tail recursively.
+
+| Previous | [Home](ch03_00_data_and_types.md) | [Next](ch03_02_variants.md) | 
+| -------- | --------------------------------- | --------------------------- |
+
