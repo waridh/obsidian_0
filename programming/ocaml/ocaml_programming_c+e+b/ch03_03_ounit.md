@@ -95,4 +95,75 @@ Each test case has a string that gives it a descriptive name, and a function tha
 
 ## 3.3.3 Improving OUnit Output
 
-The default error output for OUnit might not be so helpful. In the previous example, we only see that it says `not equal`, but we could make it better. `assert_equal` has an optional argument that lets you 
+The default error output for OUnit might not be so helpful. In the previous example, we only see that it says `not equal`, but we could make it better. `assert_equal` has an optional argument that lets you view what the expected result is, and also what the wrong output is. This argument is labeled as `printer` and it accepts that function that will convert the assertion compared type into string. Here is an example of that being used on the old test suite:
+
+
+```OCaml
+let tests = "test suite for sum" >::: [
+  "empty" >:: (fun _ -> assert_equal 0 (sum []) ~printer:string_of_int);
+  "singleton" >:: (fun _ -> assert_equal 1 (sum [1]) ~printer:string_of_int);
+  "two_elements" >:: (fun _ -> assert_equal 3 (sum [1; 2]) ~printer:string_of_int);
+]
+```
+
+It is getting a little messy, and there are now too many repeating code, so with OCaml, we would actually refactor the code to make it more readable:
+
+```OCaml
+let make_sum_test name expected_output intput =
+    name >:: (fun _ -> assert_equal expected_output (sum input) ~printer:string_of_int)
+
+let tests = "test suite for sum" >:: [
+    make_sum_test "empty" 0 [];
+    make_sum_test "singleton" 1 (1 :: []);
+    make_sum_test "two_elements" 3 (1 :: 2 :: []);
+]
+```
+
+If we invent the type itself, we might need to make a function that will convert that type into a string.
+
+## 3.3.4 Testing for Exception
+
+Need to look at the section for exceptions
+
+## 3.3.5 Test driven Development
+
+The idea here is that we are developing tests as we are developing code. Doing this will let us catch bugs the moment they appear, and know when we have written code that is correct.
+
+Once again, for example, let's say that we have a type for the days as follows:
+
+```OCaml
+type day = Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday
+```
+
+And we want to write a function `val next_weekday : day -> day <fun>` that will return the next workday after a given day.
+
+We would start with writing a broken function:
+
+```OCaml
+let next_weekday d = failwith "Unimplemented"
+```
+
+Then we start with writing a simple unit test:
+
+```OCaml
+let tests = "Testing next_weekday" >::: [
+ "tues_after_mon" >:: (fun _ -> assert_equal Tuesday (next_weekday Monday));
+]
+```
+
+And of course it would fail, so we'd move on to actually implementing the rest of the function:
+
+```OCaml
+let next_weekday d = match d with
+| Monday -> Tuesday
+| Tuesday -> Wednesday
+| Wednesday -> Thursday
+| Thursday -> Friday
+| Friday -> Monday
+| _ -> failwith "Unimplemented"
+```
+
+And you just keep developing like this. It's a very easy and simple way to build your program.
+
+| [Previous](ch03_02_variants.md) | [Home](ch03_00_data_and_types.md) | [Next](ch03_04_records_and_tuples.md) | 
+| ------------------------------- | --------------------------------- | ------------------------------------- |
