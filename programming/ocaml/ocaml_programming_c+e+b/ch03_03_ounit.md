@@ -7,3 +7,19 @@ The framework in OUnit is similar to JUnit in Java or HUnit in Haskell. This is 
 - Write unit tests in a separate file called `test.ml`.
 - Build and run `test` to execute the unit test.
 
+## 3.3.1 Example of OUnit
+
+Example function file `sum.ml`:
+
+```OCaml
+let rec sum = function [] -> 0 | h :: t -> h + sum t
+```
+
+`test.ml`:
+
+```OCaml
+Open OUnit2
+Open Sum
+
+let tests =
+```
