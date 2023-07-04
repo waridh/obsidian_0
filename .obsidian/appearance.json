@@ -3,5 +3,6 @@
   "textFontFamily": "Fira Sans",
   "monospaceFontFamily": "FiraCode NFM",
   "theme": "moonstone",
-  "translucency": true
+  "translucency": true,
+  "baseFontSize": 14
 }

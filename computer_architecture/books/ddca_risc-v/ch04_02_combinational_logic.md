@@ -175,4 +175,52 @@ Another thing to note is that a `tri` output from a module can be taken as a `lo
 
 If a gate receives a floating input or an illegal input, it might output an x if it cannot determine what the correct output value should be.
 
+## 4.2.9 Bit Swizzling
 
+Sometimes, you will need to operate only on a subset of a bus or to concatenate signals to form busses. Both these operations are know together as *bit swizzling*.
+
+### SystemVerilog implementation
+
+```SystemVerilog
+assign y = {c[2:1], {3{d[0]}}, c[0], 3'b101};
+```
+
+What did that mean? The `{}` is meant to concatenate busses. `{3{d[0]}}` indicate three copies of `d[0]`. `3'b101`  is a 3 bit binary constant. So in this example, `y` was given the 9-bit value $c_2c_1d_0d_0d_0c_0101$ using bit swizzling operations.
+
+## 4.2.10 Delays
+
+HDL statements may be associated with delays specified in an arbitrary unit. They are helpful in simulations to predict how fast a circuit will work, and also for debugging, and seeing what happens when you change the delay (deducing the source of a bad output that occurs in an unideal world).
+
+Delay of a gate produced by the synthesizer depends on its $t_{pd}$ and $t_{cd}$ specification, which is not numbered in HDL code.
+
+We are going to look at this Boolean equation again: $y=\bar{a}\bar{b}\bar{c} + a\bar{b}\bar{c} + a\bar{b}c$. That original function assumes that inverters have a delay of 1 ns, three-input AND gates have a delay of 2 ns, and three-input OR gates have a delay of 4 ns. The following figure shows that the output `y` has a lag of 7 ns.
+
+![](../../../assets/Pasted%20image%2020230703183401.png)
+
+At the beginning of the simulation, `y` will be initially unknown.
+
+### SystemVerilog
+
+How would we implement a delay on SystemVerilog? Well the sv files can include a timescale directive, as seen below:
+
+```SystemVerilog
+
+'timescale 1ns/1ps
+
+module example(input logic a, b, c,
+              output logic y);
+    logic ab, bb, cb, n1, n2, n3;
+
+    assign #1 {ab, bb, cb} = ~{a, b, c};
+    assign #2 n1 = ab & bb & cb;
+    assign #2 n2 = a & bb & cb;
+    assign #2 n3 = a & bb & c;
+    assign #4 y = n1 | n2 | n3;
+endmodule
+
+```
+
+The timescale directive is the statement at the very top of the file, and the syntax is `timescale unit/precision`. By default, both `unit` and `precision` are 1 ns. The `#` are used to indicate the amount of units of delay. It can be placed in the `assign` statement, as well as nonblocking (<=) and blocking (=) assignments.
+
+| [Previous](ch04_01_introduction.md) | [Home]() | [Next](ch04_03_structural_modeling.md) | 
+| ----------------------------------- | -------- | -------------------------------------- |
