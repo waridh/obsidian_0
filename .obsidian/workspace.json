@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md"
+                "file": "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md"
               }
             }
           }
@@ -224,6 +224,16 @@
   },
   "active": "25b1abbb22e4310f",
   "lastOpenFiles": [
+    "assets/Pasted image 20230703164128.png",
+    "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
+    "computer_architecture/books/ddca_risc-v/ch02_06_x_and_z.md",
+    "assets/Pasted image 20230703160209.png",
+    "assets/Pasted image 20230703155615.png",
+    "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
+    "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
+    "assets/Pasted image 20230703153327.png",
+    "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
+    "computer_architecture/rtl_design/getting_started.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
     "programming/ocaml/ocaml_programming_c+e+b/index.md",
@@ -243,14 +253,7 @@
     "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
     "programming/ocaml/ocaml_getting_started.md",
     "programming/ocaml/ocaml_types.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expression.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch01_01_past_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/Untitled 1.md",
-    "programming/ocaml/ocaml_programming_c+e+b/Untitled.md",
     "system_architecture",
-    "programming/ocaml/ocaml_programming_c+e+b/installing_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch01_00_better_programming.md",
-    "programming/ocaml/ocaml_syntax.md",
     "programming/ocaml/ocaml_programming_c+e+b",
     "computer_architecture/rtl_design",
     "programming/bootstrapper",
@@ -263,9 +266,6 @@
     "assets/Pasted image 20230618175625.png",
     "assets/Pasted image 20230618174202.png",
     "assets/andgate-4.jpg",
-    "assets/2innor-3.jpg",
-    "assets/Pasted image 20230618164934.png",
-    "assets/Pasted image 20230618164015.png",
     "assets/ddca",
     "programming/rust/rust_by_example",
     "programming/rust/rust_book",

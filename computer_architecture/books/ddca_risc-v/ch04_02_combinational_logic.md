@@ -129,3 +129,50 @@ endmodule
 ```
 
 So the little weird thing that is a little specific to HDLs is that the order of declaration does not matter unlike a programming language where it does. This is because of the way the language is designed -> Not compiled for fast performance.
+
+## 4.2.6 Precedence
+
+Since there are multiple mainstream HDL, it is a good habit to parenthesize the order of operations, since the default operation order could be different depending on the language.
+
+![](../../../assets/Pasted%20image%2020230703153327.png)
+
+## 4.2.7 Numbers
+
+Numbers can be specified in binary, octal, decimal, or hexadecimal. The size in bits of this number could also be specified, although it is an optional value. Just like in OCaml, underscores can be added to the number to break it so that it is more readable.
+
+### SystemVerilog implementation
+
+The format in SystemVerilog is `N'Bvalue` where `N` is the size in bits, `B` is the base and `value` is the value written in that base. In SystemVerilog, `'b` for binary, `'o` for octal, `'d` for decimal, and `'h` for hexadecimal.
+
+When the base is not given, SystemVerilog will default to decimal. If the size is not given, then it will assume that it has as many bits as it needs to be used in the expression. Zeros are automatically padded on the front to match what it needs. For example, on a `6-bit` bus, `assign w='b11` gives `w` the value 000011. It's better practice to explicitly declare the size of the number. The one exception is that `'0` and `'1` are idioms used by SystemVerilog to fill all the bits with either 0s or 1s.
+
+## 4.2.8 Z's and X's
+
+HDLs use z to represent floating values.
+- z are particularly useful for describing tristate buffers, who's output floats when the enable is 0.
+- A bus could be driven by multiple tristate buffers, but only one can be active at a time.
+- HDLs can represent this, and output a z when the output is a floating value.
+
+HDLs will also use X to indicate invalid logic levels. When a bus is driven to both 0 and 1 at the same time by two enabled tristate buffers (or any other gates really), then the result will be x for contention.
+
+At the start of simulations, state nodes like flip-flops are set to an unknown state (x). This is helpful for tracking bugs that are caused by flip-flops not being reset.
+
+### Tristate buffer on SystemVerilog
+
+```SystemVerilog
+module tristate(input logic[3:0] a,
+               input logic en,
+               output tri [3:0] y);
+    assign y en ? a : 4'bz;
+endmodule
+```
+
+What does that `4'bz` mean? It is written as 4 bits binary float, but what it actually means is that all the lanes on the bus are floating. The tristate buffer is written as a `tri` type instead of `logic` because `logic` can only have one driver at a time. Tristate busses can have multiple drivers, so they should be declared as *net*. There are two types of nets in SystemVerilog, `tri` and `trireg`. So the difference is when there are no driver active on the bus, `tri` will float while `trireg` will assume the last value that the bus held. If no type has been declared, then `tri` is the default.
+
+Another thing to note is that a `tri` output from a module can be taken as a `logic` input in a different module.
+
+![](../../../assets/Pasted%20image%2020230703164128.png)
+
+If a gate receives a floating input or an illegal input, it might output an x if it cannot determine what the correct output value should be.
+
+
