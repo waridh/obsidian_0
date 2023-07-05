@@ -47,6 +47,19 @@
             }
           },
           {
+            "id": "3e9dd911c91ffc17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "computer_architecture/books/ddca_risc-v/ch04_04_sequential_logic.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
             "id": "806477881ac0e4ea",
             "type": "leaf",
             "state": {
@@ -68,7 +81,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -209,10 +222,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d1018e8ef718c233",
+  "active": "3e9dd911c91ffc17",
   "lastOpenFiles": [
-    "computer_architecture/books/ddca_risc-v/ch04_03_structural_modeling.md",
+    "computer_architecture/books/arm_system_architecture/ch01_intro_to_processor_design.md",
+    "assets/simple_computer_diagram.drawio.png",
     "computer_architecture/books/ddca_risc-v/ch04_04_sequential_logic.md",
+    "computer_architecture/books/arm_system_architecture",
+    "computer_architecture/books/ddca_risc-v/ch04_03_structural_modeling.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_07_debugging.md",
     "computer_architecture/books/ddca_risc-v/ch02_08_combinational_building_blocks.md",
     "assets/Pasted image 20230703194233.png",
@@ -241,8 +257,6 @@
     "programming/ocaml/ocaml_programming_c+e+b/ch02_06_printing.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_05_documentation.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_03_expressions.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_02_compiling_ocaml.md",
     "system_architecture",
     "programming/ocaml/ocaml_programming_c+e+b",
     "computer_architecture/rtl_design",
@@ -252,11 +266,9 @@
     "assets/ddca/three_terminal_nand.jpg",
     "assets/powerex-5.jpg",
     "assets/Pasted image 20230618183400.png",
-    "assets/Pasted image 20230618180231.png",
     "assets/ddca",
     "programming/rust/rust_by_example",
     "programming/rust/rust_book",
-    "programming/tcl",
     "programming/rust/rust.canvas",
     "communications/spl5/chapter_6/arbitration.canvas"
   ]

@@ -33,3 +33,38 @@ The `always` statement can be used to imply `flip-flops`, `latches`, or combinat
 
 ## 4.4.2 Resettable Registers
 
+On system bootup, or initial state, the output of a ff will be unknown. This is denoted by `x` in SystemVerilog. A *resettable register* is a way to put your system in a known state on bootup. This can be done either asynchronously, or synchronously. Doing so asynchronously will make the process occur immediately, while a synchronous implementation will follow the next clk edge that is specified in the implementation.
+
+### SystemVerilog Implementation
+
+```SystemVerilog
+module flopr(input logic clk,
+            input logic reset,
+            input logic [3:0] d,
+            output logic [3:0] q);
+
+// Asynchronous reset
+// We now have a new input, being the reset. When the reset reset occurs, then the
+// system will set the output of this flop to 0. Else, it's just a regular flop. So
+// the always_ff with trigger either on the clk or the reset. This means it could
+// ignore the clk if a reset comes in. In fact, you can replace the comma with the
+// word or.
+always_ff @(posedge clk, posedge reset)
+    if (reset) q <= 4'b0;
+    else q <= d;
+endmodule
+
+module flopr (input logic clk,
+             input logic reset,
+             input logic [3:0] d,
+             output logic [3:0] q);
+
+// Synchronous reset
+// The difference here is that reset is no longer being used to trigger the action.
+always_ff @(posedge clk)
+    if (reset) q <= 4'b0;
+    else q <= d;
+endmodule
+```
+
+`always` with multiple items in the sensitivity list can have those items be separated by either a comma `,` or an or `or`.
