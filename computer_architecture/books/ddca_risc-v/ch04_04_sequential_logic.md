@@ -68,3 +68,48 @@ endmodule
 ```
 
 `always` with multiple items in the sensitivity list can have those items be separated by either a comma `,` or an or `or`.
+
+## 4.4.3 Enable Registers
+
+An enable register will only respond to the clock when the enable is active. You can stack reset on top of that, which would mean that the flop will only retain its value if both enable and reset are FALSE.
+
+### Resettable and Enable Register Example
+
+```SystemVerilog
+module flopenr(
+    input logic clk,
+    input logic reset,
+    input logic en,
+    input logic [3:0] d,
+    output logic [3:0] q
+);
+// The name means flip-flop enable reset.
+
+always_ff @(posedge clk, posedge reset)
+if (reset) q <= 4'b0;
+else if (en) q <= d;
+endmodule
+```
+
+## 4.4.4 Multiple Registers
+
+In SystemVerilog you can use a single `always` to describe multiple pieces of hardware. For example, let's look at a synchronizer.
+
+### Synchronizer: SystemVerilog
+
+```SystemVerilog
+module sync(input logic clk,
+           input logic d,
+           output logic q);
+
+logic n1;
+
+always_ff @(posedge clk)
+    begin
+        n1 <= d; // Non-blocking
+        q <= n1; // Non-blocking
+    end
+endmodule
+```
+
+So now we have a new construct, being the `begin` and `end`. This needed to be done because there are multiple statements showing up inside the `always`.  It is like using `{}` in C.
