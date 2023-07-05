@@ -224,6 +224,7 @@
   },
   "active": "3e9dd911c91ffc17",
   "lastOpenFiles": [
+    "assets/Pasted image 20230705140909.png",
     "computer_architecture/books/ddca_risc-v/ch04_04_sequential_logic.md",
     "computer_architecture/books/ddca_risc-v/ch03_05_sequential_logic.md",
     "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
@@ -257,7 +258,6 @@
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_06_printing.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_05_documentation.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_04_functions.md",
     "system_architecture",
     "programming/ocaml/ocaml_programming_c+e+b",
     "computer_architecture/rtl_design",
