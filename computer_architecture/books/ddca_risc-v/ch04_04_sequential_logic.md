@@ -113,3 +113,7 @@ endmodule
 ```
 
 So now we have a new construct, being the `begin` and `end`. This needed to be done because there are multiple statements showing up inside the `always`.  It is like using `{}` in C.
+
+## 4.4.5 Latches
+
+
