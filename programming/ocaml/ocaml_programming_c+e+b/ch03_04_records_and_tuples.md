@@ -1,1 +1,0 @@
-Taking a little break and learning computer architecture real quick
