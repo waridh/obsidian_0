@@ -16,13 +16,31 @@ Functionally, it uses the set and reset signal to control the outputs of both $Q
 
 | S   | R   | Q   | $\bar{Q}$ |
 | --- | --- | --- | --------- |
-| 0   | 0   | X   | X         |
+| 0   | 0   | Q   | $\bar{Q}$ | 
 | 0   | 1   | 0   | 1         |
 | 1   | 0   | 1   | 0         |
-| 1   | 1   | 0   | 0         | 
+| 1   | 1   | 0   | 0         |
 
-I have done a circuit design course before doing this, so I have an idea of how it is done.
+I have done a circuit design course before doing this, so I have an idea of how it is done. Just remember that there are hold, set, reset, and the unideal output of both Q and $\bar{Q}$ being 0.
 
 ## 3.2.2 D Latch
 
 To improve upon the SR latch, and simplify the interface, we now have the D flip flop, which controls what it should change to, and how it should change. This is done by binding the S and R input with a new input D with an intermediate of $\bar{D}$. The clk signal was also added to control when the state should change.
+
+Simpler to have a little example in the form of a truth table:
+
+| CLK | D   | Q   | $\bar{Q}$ |
+| --- | --- | --- | --------- |
+| 0   | X   | Q   | $\bar{Q}$ |
+| 1   | 0   | 0   | 1         |
+| 1   | 1   | 1   | 0         | 
+
+![](../../../assets/Pasted%20image%2020230705180621.png)
+
+## 3.2.3 D Flip-Flop
+
+So what makes a flip flop different? First of all a d flip-flop is made from two back to back latches, and functionally, it was designed to improve synchronization and reduce erratic behaviour by allowing state changes to occur during some edge of the clock signal.
+
+![](../../../assets/Pasted%20image%2020230705181439.png)
+
+

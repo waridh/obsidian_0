@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_06_finite_state_machine.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_06_finite_state_machine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md",
+                "file": "computer_architecture/books/ddca_risc-v/ch04_06_finite_state_machine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md"
+                "file": "computer_architecture/books/ddca_risc-v/ch04_06_finite_state_machine.md"
               }
             }
           }
@@ -224,16 +224,20 @@
   },
   "active": "3e9dd911c91ffc17",
   "lastOpenFiles": [
+    "computer_architecture/books/ddca_risc-v/ch04_05_more_combinational_logic.md",
+    "computer_architecture/books/ddca_risc-v/ch04_06_finite_state_machine.md",
+    "computer_architecture/books/ddca_risc-v/ch04_04_sequential_logic.md",
+    "computer_architecture/books/ddca_risc-v/ch04_03_structural_modeling.md",
+    "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md",
+    "assets/Pasted image 20230705181439.png",
+    "assets/Pasted image 20230705180621.png",
     "assets/Pasted image 20230705172547.png",
     "computer_architecture/books/ddca_risc-v/ch03_05_sequential_logic.md",
-    "computer_architecture/books/ddca_risc-v/ch03_02_latches_and_ff.md",
-    "computer_architecture/books/ddca_risc-v/ch04_04_sequential_logic.md",
     "computer_architecture/books/ddca_risc-v/ch01_07_nmos_pmos.md",
     "computer_architecture/books/ddca_risc-v/ch04_02_combinational_logic.md",
     "assets/Pasted image 20230705161831.png",
     "assets/Pasted image 20230705140909.png",
     "computer_architecture/books/ddca_risc-v/ch04_01_introduction.md",
-    "computer_architecture/books/ddca_risc-v/ch04_03_structural_modeling.md",
     "computer_architecture/books/arm_system_architecture/ch01_intro_to_processor_design.md",
     "assets/simple_computer_diagram.drawio.png",
     "computer_architecture/books/arm_system_architecture",
@@ -244,9 +248,7 @@
     "assets/Pasted image 20230703164128.png",
     "computer_architecture/books/ddca_risc-v/ch02_06_x_and_z.md",
     "assets/Pasted image 20230703160209.png",
-    "assets/Pasted image 20230703155615.png",
     "computer_architecture/books/ddca_risc-v/ch01_08_power_consumption.md",
-    "assets/Pasted image 20230703153327.png",
     "computer_architecture/rtl_design/getting_started.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_04_records_and_tuples.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch03_03_ounit.md",
@@ -259,14 +261,12 @@
     "programming/ocaml/ocaml_programming_c+e+b/ch03_01_lists.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_01_toplevel.md",
     "programming/ocaml/ocaml_programming_c+e+b/ch02_00_basics_of_ocaml.md",
-    "programming/ocaml/ocaml_programming_c+e+b/ch02_06_printing.md",
     "system_architecture",
     "programming/ocaml/ocaml_programming_c+e+b",
     "computer_architecture/rtl_design",
     "programming/bootstrapper",
     "programming/tk",
     "programming/ocaml",
-    "assets/ddca/three_terminal_nand.jpg",
     "assets/ddca",
     "programming/rust/rust_by_example",
     "programming/rust/rust_book",

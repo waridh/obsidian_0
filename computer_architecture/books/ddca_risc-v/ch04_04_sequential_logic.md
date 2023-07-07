@@ -116,4 +116,16 @@ So now we have a new construct, being the `begin` and `end`. This needed to be d
 
 ## 4.4.5 Latches
 
+It is good practice to avoid latches, but it is good to know how to implement them so that you can track them down and fix it if you have an unintended latch. Cases where latches are the best idea are not very common, and it is best to avoid dealing with that.
 
+```SystemVerilog
+module latch(input logic clk,
+            input logic [3:0] d,
+            output logic [3:0] q);
+always_latch
+ if (clk) q <= d;
+endmodule
+```
+
+| [Previous](ch04_03_structural_modeling.md) | [Home]() | [Next](ch04_05_more_combinational_logic.md) | 
+| ------------------------------------------ | -------- | ------------------------------------------- |
