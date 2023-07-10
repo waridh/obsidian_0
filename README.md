@@ -1,3 +1,7 @@
+# NOTE
+
+This repository is now deprecated. All new notes are going to be posted to my website. Please have a look at [https://waridh.github.io/notes/](https://waridh.github.io/notes/)
+
 # The Knowledge Vault
 
 ## What is this?
